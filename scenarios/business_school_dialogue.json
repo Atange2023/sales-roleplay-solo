@@ -1,0 +1,35 @@
+{
+  "scene": "business-school-recruitment",
+  "scene_name": "商学院招生咨询面谈（公开课后）",
+  "characters": {
+    "zhous": {"name": "周总", "voice": "zh-CN-YunjianNeural", "rate": "-5%"},
+    "lin": {"name": "林女士", "voice": "zh-CN-XiaoxiaoNeural", "rate": "+0%"},
+    "chen": {"name": "小陈", "voice": "zh-CN-YunxiNeural", "rate": "-10%"}
+  },
+  "initial_state": {"open": 30, "trust": 20, "decision": 0},
+  "branches": [
+    {"id": "B0_open_zhous", "char": "zhous", "trigger": "开场-周总", "replies": ["老师讲得倒是有点意思，就是不知道我们这种小厂能不能用上。你贵姓？", "今天讲 AI 转型，听着热闹，可我们厂连个 IT 都没有，咋弄？"], "state": {}},
+    {"id": "B0_open_lin", "char": "lin", "trigger": "开场-林女士", "replies": ["你好，我是朋友介绍来的。今天讲得挺有启发，想问下你们这个班具体怎么安排？", "您好。我听了一场，觉得讲得不错，想了解一下你们的学习项目。"], "state": {}},
+    {"id": "B0_open_chen", "char": "chen", "trigger": "开场-小陈", "replies": ["嗯……我爸让我来听听的。你们这班，都是些什么人在上？", "我是被家里安排来听公开课的，随便看看。你们同学都什么背景？"], "state": {}},
+    {"id": "B0_generic", "char": "zhous", "trigger": "顾问泛问", "replies": ["先了解一下吧，不急。", "我还没想好要不要报，就是先问问。"], "state": {"open": -5}},
+    {"id": "B0_pitch", "char": "zhous", "trigger": "顾问介绍课程", "replies": ["这些我在宣传册上都看过了，能说点不一样的么？", "师资强、排名高，这些我都知道，问题是我用不用得上。"], "state": {"trust": -10}},
+    {"id": "B1_why_zhous", "char": "zhous", "trigger": "三问挖动机-周总", "replies": ["你问到这个，我倒想说说——厂里管得乱，人难招，老师傅走了技术就断层。AI 我也说不清能帮啥，但总得找出路。", "说白了，现在订单不好拿，成本压不下来，同行都上自动化了，我再不动就晚了。"], "state": {"open": 20}},
+    {"id": "B1_why_lin", "char": "lin", "trigger": "三问挖动机-林女士", "replies": ["我做了七八年销售管理，业绩一直不错，但再往上走，光靠业绩不够了，得补系统的东西。", "说实话我想再进一步，公司里学历这块是短板，我自己也想系统性充充电。"], "state": {"open": 20}},
+    {"id": "B1_why_chen", "char": "chen", "trigger": "三问挖动机-小陈", "replies": ["我管供应链，管了两年，说实话很多事都是摸着石头过河。我爸说我不系统，我不服，但……他说得也没错。", "想学点公司治理的东西，顺便看看同辈的都在怎么干。"], "state": {"open": 20}},
+    {"id": "B1_status", "char": "zhous", "trigger": "问现状", "replies": ["厂里就我一个拍板的，下面一群跟了十几年的老员工，管松了乱、管紧了走。", "我一周在厂里五天半，实在抽不出整块时间。"], "state": {"open": 10}},
+    {"id": "B2_concern_zhous", "char": "zhous", "trigger": "问顾虑-周总", "replies": ["最大的障碍？钱是一方面，主要是我怕花了大价钱学一堆用不上的。", "学费我打听过，不便宜。加上我得停厂里的活来上课，这笔账得算清楚。"], "state": {"open": 15}},
+    {"id": "B2_concern_lin", "char": "lin", "trigger": "问顾虑-林女士", "replies": ["公司预算要走审批流程，我得上个报告说服 HR——要是他们不批，我自己掏这个钱压力挺大。", "主要是时间，我出差多，一周两次课，怕坚持不下来。"], "state": {"open": 15}},
+    {"id": "B2_concern_chen", "char": "chen", "trigger": "问顾虑-小陈", "replies": ["我爸花钱倒是不会说什么，但我怕他觉得我又在'交学费学了个寂寞'。", "我担心的是同学层次——花这个钱，得跟值当的人一起学才有意思。"], "state": {"open": 15}},
+    {"id": "B2_direct", "char": "lin", "trigger": "直白问不报名担心什么", "replies": ["没有没有，我再想想。", "哈哈，你这么一问我还真不知道怎么接，我回去想想吧。"], "state": {"open": -10, "trust": -10}},
+    {"id": "B2_past", "char": "zhous", "trigger": "问过往课程经验", "replies": ["上过，机构班、总裁班都上过，讲得都是理论，回来一点用没有。", "听过几次课，有的就是卖课现场，所以我今天也挺谨慎的。"], "state": {"open": 10}},
+    {"id": "B3_case_zhous", "char": "zhous", "trigger": "给实证案例", "replies": ["真有上期学员是机械厂的？他后来怎么弄的？", "要是能先看看同行的做法，那倒可以听听。"], "state": {"trust": 15, "open": 10}},
+    {"id": "B3_roi_lin", "char": "lin", "trigger": "帮算职业回报", "replies": ["这个倒是实用，我写报告正愁没数据。你们有现成的？", "要是能帮我算清楚投入产出，我汇报也好开口。"], "state": {"trust": 15, "open": 15}},
+    {"id": "B3_respect_chen", "char": "chen", "trigger": "尊重小陈经验", "replies": ["我负责供应链，这两年确实做了些改革，物流成本降了一截。你说得对，我不是什么都不懂的二代。", "你这么说，倒是难得——来这儿的人都把我当小孩。"], "state": {"trust": 15, "open": 15}},
+    {"id": "B3_push", "char": "chen", "trigger": "催报名/价格战", "replies": ["我再考虑考虑吧。", "这事得跟我爸商量，你别急。"], "state": {"decision": -20}},
+    {"id": "B4_hot", "char": "zhous", "trigger": "高热度-约下一步", "replies": ["行，那你下周四有空吗？我带厂里两个骨干一起来你们学校坐坐，当面聊。", "这样吧，你先把你们那个 AI 专题营的材料给我，我回去细看。"], "state": {"decision": 40}},
+    {"id": "B4_warm", "char": "lin", "trigger": "高热度-约深度咨询", "replies": ["可以，这周六下午我有空，约个深度咨询吧，我把 HR 那边的顾虑一起问清楚。", "那你先把项目资料和那个 ROI 摘要发我，我看看再约你。"], "state": {"decision": 40}},
+    {"id": "B4_chen_next", "char": "chen", "trigger": "高热度-约同学交流", "replies": ["下期公开课什么时候？我想带我爸来看看，让他知道我在认真搞。", "你们有校友活动吗？我想先参加一次，看看圈子。"], "state": {"decision": 40}},
+    {"id": "END_keep", "char": "lin", "trigger": "结局-低热度/失败", "replies": ["行，资料发我邮箱吧，我看看再联系你。", "我回去想想，有需要会找你的。"], "state": {}},
+    {"id": "END_deal", "char": "chen", "trigger": "结局-提交材料", "replies": ["行，材料我下周交，你到时候带我去见见招生老师。", "就这么定了，先报专题营试试，好的话再考虑研修班。"], "state": {"decision": 50}}
+  ]
+}

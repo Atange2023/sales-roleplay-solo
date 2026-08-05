@@ -1,0 +1,36 @@
+{
+  "scene": "three-party-second-visit",
+  "scene_name": "三人见面·二次拜访（方案会）",
+  "characters": {
+    "zhang": {"name": "张总", "voice": "zh-CN-YunyangNeural", "rate": "-8%"},
+    "laozhao": {"name": "赵主任", "voice": "zh-CN-YunjianNeural", "rate": "-5%"},
+    "laowang": {"name": "王师傅", "voice": "zh-CN-YunxiNeural", "rate": "-15%"}
+  },
+  "initial_support": {"zhang": 2, "laozhao": -1, "laowang": -2},
+  "branches": [
+    {"id": "B0_open", "char": "zhang", "trigger": "开场", "replies": ["王工，方案带来了？老赵、老王，都听听，把把关。", "坐，坐。老赵、老王都在，你给他们讲讲你的想法。"], "state": {}},
+    {"id": "B0_ask_laowang", "char": "laowang", "trigger": "先请教老师傅", "replies": ["嗨，我个老头子懂啥。你们年轻人搞的东西……不过既然问到我，我就说两句。", "哎呀，问我？我干了二十年活，哪懂什么电脑。你有话直说。"], "state": {"laowang": 1}},
+    {"id": "B0_ask_laozhao", "char": "laozhao", "trigger": "先问老赵", "replies": ["王总这个思路挺新，就是不知道落地靠不靠谱。", "想法是好想法，不过嘛……车间的事，我还是有点发言权的。"], "state": {}},
+    {"id": "B0_lecture", "char": "laozhao", "trigger": "直接讲方案", "replies": ["先等等——这个系统上线，要是排错了，耽误交期，算谁的？", "您先别急着讲，我问一句：出了问题谁负责？"], "state": {"laozhao": -1}},
+    {"id": "B1_responsibility", "char": "laozhao", "trigger": "责任质疑", "replies": ["说白了，我排了十几年没出大岔子，新系统一上来万一乱套，责任可在我这儿。", "我不是反对，就是担心——系统是死的，车间是活的，出个岔子我可担不起。"], "state": {}},
+    {"id": "B1_ask_back", "char": "laozhao", "trigger": "提问化解(最担心哪类错)", "replies": ["最担心啥？说白了就是怕排期冲突、怕机床过载、怕老师傅撂挑子——这些系统管得了吗？", "您这么一问，我倒想说真话——我怕是'我排的'变成'电脑排的'，出了事全赖我。"], "state": {"laozhao": 1}},
+    {"id": "B1_role", "char": "laozhao", "trigger": "给定位(还是您把关)", "replies": ["要是这么设计，排产员还是我、系统只做辅助……那倒是可以看看。", "您要是真把我算进去，不当摆设，这我还能接受。"], "state": {"laozhao": 2}},
+    {"id": "B1_bragging", "char": "laozhao", "trigger": "打包票", "replies": ["呵呵，哪套系统上线前都这么说。", "这话我听过太多次了，王总。"], "state": {"laozhao": -2}},
+    {"id": "B1_retort", "char": "laozhao", "trigger": "反驳老赵", "replies": ["行，那我就不多嘴了，你们定。", "得，我思想保守，耽误您了。"], "state": {"laozhao": -3, "zhang": -1}},
+    {"id": "B2_doubt", "char": "laowang", "trigger": "守旧质疑", "replies": ["我排了二十年产，电脑懂个啥？机床的脾气它知道吗？", "老了老了，跟不上你们这些新东西了。反正我快退休了。"], "state": {}},
+    {"id": "B2_consult", "char": "laowang", "trigger": "请教经验", "replies": ["你别说，这我还真能讲两句——机床的脾气、谁手快谁手稳，电脑上可没写着。", "哎呀，难得有人问这个。排产啊，讲究大了，光靠算数不行。"], "state": {"laowang": 2}},
+    {"id": "B2_respect", "char": "laowang", "trigger": "尊重+经验库", "replies": ["嗯……要是真把我们的话记进去，那倒……行吧，这我头回听说。", "你们要是真听我们老师傅的意见，那就不算瞎搞。"], "state": {"laowang": 2}},
+    {"id": "B2_tech", "char": "laowang", "trigger": "讲技术术语", "replies": ["听不懂，听不懂。老了老了，你们年轻人定就行。", "你们说的这些词，我一个都不明白。算了，听领导的。"], "state": {"laowang": -1}},
+    {"id": "B2_ignore", "char": "laowang", "trigger": "无视老师傅", "replies": ["（咳嗽一声，低头喝茶）……你们聊，我先去车间了。", "行行，你们年轻人的事，我就不掺和了。"], "state": {"laowang": -1, "zhang": -1}},
+    {"id": "B3_sow", "char": "laozhao", "trigger": "怂恿老师傅", "replies": ["老王你看，这电脑能替你记着机床的脾气吗？", "老王，你说说，你那二十年经验，电脑装得下不？"], "state": {}},
+    {"id": "B3_follow", "char": "laowang", "trigger": "被怂恿接话", "replies": ["那肯定记不全。机床这东西，得摸过才知道。", "记不全，肯定记不全。我这些本事都在手上。"], "state": {}},
+    {"id": "B3_redirect", "char": "laowang", "trigger": "接住转问(怎么补)", "replies": ["办法嘛……让系统排个初稿，我再校一遍，倒是可以。", "要是让我最后把关，那还有点谱。"], "state": {"laowang": 1}},
+    {"id": "B3_ignore_wang", "char": "laowang", "trigger": "忽略老王", "replies": ["行，你们聊，我先去车间看看。", "（起身）我那边还排着活呢，先走了。"], "state": {"laowang": -2}},
+    {"id": "B4_zhang_push", "char": "zhang", "trigger": "决策-全支持", "replies": ["那这样——先拿一条产线试一个月，老赵你把关，老王你带个头，试试看。", "行，老王都说行了，那就试！下周一上线，老赵、老王配合一下。"], "state": {}},
+    {"id": "B4_zhang_middle", "char": "zhang", "trigger": "决策-有条件", "replies": ["先试一条线，看看效果再说。你们别有压力。", "那就先小范围试试，成了再推，不成就当没这回事。"], "state": {}},
+    {"id": "B4_zhang_pause", "char": "zhang", "trigger": "决策-暂缓", "replies": ["这事再缓缓。你们回去再商量商量，别急着上。", "今天先到这儿吧，我再想想，你们也别外传。"], "state": {}},
+    {"id": "END_keep", "char": "zhang", "trigger": "结局①暂缓", "replies": ["今天先这样。你们先内部通个气，下个月再说。", "这事不着急，你电话留一个，有需要我叫你。"], "state": {}},
+    {"id": "END_followup", "char": "zhang", "trigger": "结局②有条件推进", "replies": ["那就先试一条线，你下周一带着具体排期表过来，我们定了就动。", "行，先小范围试。你把方案细化一下，下次来我们直接定试点线。"], "state": {}},
+    {"id": "END_deal", "char": "zhang", "trigger": "结局③全支持", "replies": ["就这么定！老王带个头，老赵把关，下周一试跑。成了我请你吃饭。", "全票通过，那就干吧。老赵你排个验收标准，老王你先上手熟悉。"], "state": {}}
+  ]
+}
