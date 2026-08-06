@@ -1,20 +1,23 @@
 # Portable offline install
 
-The ZIP has one top-level folder named `sales-roleplay-solo`.
+The offline ZIP contains one top-level folder, `sales-roleplay-solo/`. Copy it into the skills directory of a Skill-capable Agent, restart or re-index that Agent, then start practice in the Agent chat. Do not run `roleplay.py` to practise: Python never replaces the host model.
 
-## Codex
+Typical locations:
 
-1. Extract the ZIP.
-2. Copy `sales-roleplay-solo` into the user's Codex `skills` directory.
-3. Restart or open a new task so skills are re-indexed.
-4. Run `py scripts/roleplay.py --smoke --offline --no-audio` from the Skill folder.
+- Codex: `%USERPROFILE%\.codex\skills\sales-roleplay-solo`
+- Reasonix: `.reasonix\skills\sales-roleplay-solo`
+- OpenClaw/ArkClaw: `~/.openclaw/workspace/skills/sales-roleplay-solo`
 
-## Reasonix
+Git install after a v0.4.2 tag exists:
 
-Copy the same folder to the target workspace's `.reasonix\skills\sales-roleplay-solo` directory, restart Reasonix, and invoke the skill.
+```powershell
+git clone --branch v0.4.2 --depth 1 https://github.com/Atange2023/sales-roleplay-solo.git "$env:USERPROFILE\.codex\skills\sales-roleplay-solo"
+```
 
-## Offline guarantees
+Offline self-check from the installed Skill folder:
 
-No installation is required for text practice, packaged MP3 lookup, MIDI files, JSONL logs, CSV, or HTML reports. Python 3 is required for the included launchers. Audio playback uses an available local player; fixed MP3 files remain accessible even when automatic playback is unavailable.
+```powershell
+py scripts/roleplay.py --smoke --offline --no-audio
+```
 
-Voice input uses Windows speech recognition when present. Dynamic TTS is optional and may require `edge-tts` plus network access; it is never required for fixed lines.
+Text practice, fixed MP3, cues, progress, logs, CSV, and HTML require no network. Speech transcription and dynamic TTS depend on host capability.

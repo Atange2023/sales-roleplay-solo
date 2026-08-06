@@ -14,6 +14,20 @@ TMP_ROOT.mkdir(parents=True, exist_ok=True)
 
 
 class OfflineCliTests(unittest.TestCase):
+    def test_default_cli_refuses_standalone_roleplay(self) -> None:
+        completed = subprocess.run(
+            [sys.executable, str(CLI), "--offline", "--no-audio"],
+            cwd=ROOT,
+            input="",
+            text=True,
+            encoding="utf-8",
+            capture_output=True,
+            timeout=10,
+        )
+        self.assertEqual(completed.returncode, 2, completed.stderr)
+        self.assertIn("HOST AGENT REQUIRED", completed.stdout)
+        self.assertNotIn("SELECT DLC", completed.stdout)
+
     def test_smoke_flow_runs_offline_and_exports_weekly_report(self) -> None:
         log = TMP_ROOT / "sessions.jsonl"
         reports = TMP_ROOT / "reports"

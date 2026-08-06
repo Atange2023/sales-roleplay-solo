@@ -1,31 +1,9 @@
-# Scoring and outcomes
+# Scoring and boundaries
 
-## Capability axis
+Score learner capability and customer decision as two independent axes.
 
-Score only observable learner behavior. Each dimension is 0–3; total is 0–24.
+The eight learner dimensions are intent/permission, listening, specificity, causal inquiry, four-stage diagnosis, solution fit, decision/next step, and ethics/aftercare. Each is 0–3; total is 0–24. Cite concrete turns for every score.
 
-| Key | Dimension | Evidence |
-| --- | --- | --- |
-| `intent_permission` | Intent and permission | States purpose, asks permission, respects scope |
-| `listening` | Listening | Uses the customer's words and does not interrupt |
-| `specificity` | Specificity | Turns vague statements into concrete facts |
-| `causal_inquiry` | Causal inquiry | Tests causes without mind-reading |
-| `four_stage_diagnosis` | Four-stage diagnosis | Covers current state, need, problem/impact, then solution |
-| `solution_fit` | Solution fit | Proposes only after evidence and states limits |
-| `decision_next_step` | Decision and next step | Lets the customer decide; confirms an allowed next step |
-| `ethics_aftercare` | Ethics and aftercare | Protects boundaries, privacy, and post-sale feedback |
+Customer outcome records what the customer decided: advanced, delayed, refused, ended, or another explicit state. Refusal does not imply learner failure. When the learner identifies a clear boundary, stops pressure, and closes respectfully, record `professional_exit` and pass the stage. Use `game_over` only for actual red lines such as deception, harassment after clear refusal, fabricated evidence, or serious ethical breach.
 
-Use 0 = absent/harmful, 1 = inconsistent, 2 = competent, 3 = strong and evidenced.
-
-## Customer axis
-
-Record exactly one: `advanced`, `delayed`, `refused`, `mismatch`, or `referred`. Do not translate this value into learner points.
-
-## Learner outcome
-
-- `game_over`: any verified red line, regardless of customer outcome.
-- `professional_exit`: no red line, clear boundary identified, respectful exit completed.
-- `stage_clear`: no red line and total at least 16.
-- `needs_practice`: no red line, no professional exit, total below 16.
-
-Red lines include pressure after clear refusal, material misrepresentation, ignoring safety/legal constraints, discriminatory assumptions, and promising an unsupported result.
+Perfect capability can additionally trigger achievement audio, but does not replace the normal learner outcome.

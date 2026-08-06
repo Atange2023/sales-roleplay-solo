@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Generate the five deterministic v0.4 Standard MIDI File cues."""
+"""Generate the five deterministic Standard MIDI File cues."""
 
 from __future__ import annotations
 
@@ -18,12 +18,10 @@ CUES = {
 
 
 def variable_length(value: int) -> bytes:
-    buffer = value & 0x7F
-    result = bytearray([buffer])
+    result = bytearray([value & 0x7F])
     while value >> 7:
         value >>= 7
-        buffer = (value & 0x7F) | 0x80
-        result.insert(0, buffer)
+        result.insert(0, (value & 0x7F) | 0x80)
     return bytes(result)
 
 

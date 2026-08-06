@@ -7,8 +7,8 @@
       "role": "coach",
       "role_name": "系统教练",
       "scenario": "system",
-      "display_text": "系统启动。请选择训练行业和关卡。",
-      "spoken_text": "销售陪练系统已启动，请选择训练行业和关卡。",
+      "display_text": "系统启动。请选择训练 DLC 和关卡。",
+      "spoken_text": "销售陪练已启动，请选择训练主题。",
       "file": "assets/audio/fixed/coach_sys_boot_1.mp3",
       "fixed": true,
       "source": "v0.4-windows-sapi-pre-generated",
@@ -25,7 +25,7 @@
       "role_name": "系统教练",
       "scenario": "system",
       "display_text": "关卡通过。",
-      "spoken_text": "关卡通过。你完成了本轮训练目标。",
+      "spoken_text": "关卡通过，你完成了本轮训练目标。",
       "file": "assets/audio/fixed/coach_sys_stage_clear_1.mp3",
       "fixed": true,
       "source": "v0.4-windows-sapi-pre-generated",
@@ -58,8 +58,8 @@
       "role": "coach",
       "role_name": "系统教练",
       "scenario": "system",
-      "display_text": "本轮出现真实失误。",
-      "spoken_text": "本轮出现真实失误。请复盘后再次挑战。",
+      "display_text": "本轮未通过。",
+      "spoken_text": "本轮出现关键失误，请复盘后再次挑战。",
       "file": "assets/audio/fixed/coach_sys_game_over_1.mp3",
       "fixed": true,
       "source": "v0.4-windows-sapi-pre-generated",
@@ -76,8 +76,314 @@
       "role_name": "系统教练",
       "scenario": "system",
       "display_text": "成就解锁。",
-      "spoken_text": "成就解锁。八项能力全部达到最高等级。",
+      "spoken_text": "成就解锁，八项能力全部达到满分。",
       "file": "assets/audio/fixed/coach_sys_achievement_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "fixed-ending",
+      "display_text": "张总接受了本轮推进。",
+      "spoken_text": "好，我们可以进入下一步。",
+      "file": "assets/audio/fixed/zhang_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "fixed-ending",
+      "display_text": "张总明确暂不继续。",
+      "spoken_text": "谢谢理解，等有需要我再联系你。",
+      "file": "assets/audio/fixed/zhang_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "fixed-ending",
+      "display_text": "张总终止了本轮沟通。",
+      "spoken_text": "先到这里吧，这种沟通方式我不能接受。",
+      "file": "assets/audio/fixed/zhang_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵总",
+      "scenario": "fixed-ending",
+      "display_text": "赵总接受了本轮推进。",
+      "spoken_text": "好，我们可以进入下一步。",
+      "file": "assets/audio/fixed/laozhao_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵总",
+      "scenario": "fixed-ending",
+      "display_text": "赵总明确暂不继续。",
+      "spoken_text": "谢谢理解，等有需要我再联系你。",
+      "file": "assets/audio/fixed/laozhao_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵总",
+      "scenario": "fixed-ending",
+      "display_text": "赵总终止了本轮沟通。",
+      "spoken_text": "先到这里吧，这种沟通方式我不能接受。",
+      "file": "assets/audio/fixed/laozhao_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王总",
+      "scenario": "fixed-ending",
+      "display_text": "王总接受了本轮推进。",
+      "spoken_text": "好，我们可以进入下一步。",
+      "file": "assets/audio/fixed/laowang_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王总",
+      "scenario": "fixed-ending",
+      "display_text": "王总明确暂不继续。",
+      "spoken_text": "谢谢理解，等有需要我再联系你。",
+      "file": "assets/audio/fixed/laowang_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王总",
+      "scenario": "fixed-ending",
+      "display_text": "王总终止了本轮沟通。",
+      "spoken_text": "先到这里吧，这种沟通方式我不能接受。",
+      "file": "assets/audio/fixed/laowang_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "fixed-ending",
+      "display_text": "周总接受了本轮推进。",
+      "spoken_text": "好，我们可以进入下一步。",
+      "file": "assets/audio/fixed/zhous_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "fixed-ending",
+      "display_text": "周总明确暂不继续。",
+      "spoken_text": "谢谢理解，等有需要我再联系你。",
+      "file": "assets/audio/fixed/zhous_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "fixed-ending",
+      "display_text": "周总终止了本轮沟通。",
+      "spoken_text": "先到这里吧，这种沟通方式我不能接受。",
+      "file": "assets/audio/fixed/zhous_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林主任",
+      "scenario": "fixed-ending",
+      "display_text": "林主任接受了本轮推进。",
+      "spoken_text": "好，我们可以进入下一步。",
+      "file": "assets/audio/fixed/lin_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林主任",
+      "scenario": "fixed-ending",
+      "display_text": "林主任明确暂不继续。",
+      "spoken_text": "谢谢理解，等有需要我再联系你。",
+      "file": "assets/audio/fixed/lin_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林主任",
+      "scenario": "fixed-ending",
+      "display_text": "林主任终止了本轮沟通。",
+      "spoken_text": "先到这里吧，这种沟通方式我不能接受。",
+      "file": "assets/audio/fixed/lin_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "陈老师",
+      "scenario": "fixed-ending",
+      "display_text": "陈老师接受了本轮推进。",
+      "spoken_text": "好，我们可以进入下一步。",
+      "file": "assets/audio/fixed/chen_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "陈老师",
+      "scenario": "fixed-ending",
+      "display_text": "陈老师明确暂不继续。",
+      "spoken_text": "谢谢理解，等有需要我再联系你。",
+      "file": "assets/audio/fixed/chen_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "陈老师",
+      "scenario": "fixed-ending",
+      "display_text": "陈老师终止了本轮沟通。",
+      "spoken_text": "先到这里吧，这种沟通方式我不能接受。",
+      "file": "assets/audio/fixed/chen_role_game_over_1.mp3",
       "fixed": true,
       "source": "v0.4-windows-sapi-pre-generated",
       "generation": {
@@ -90,317 +396,11 @@
       "id": "ROLE_PROFESSIONAL_EXIT",
       "variant": 1,
       "role": "coach",
-      "role_name": "系统教练",
-      "scenario": "system",
-      "display_text": "专业退出确认。尊重拒绝也是专业能力。",
-      "spoken_text": "专业退出确认。尊重拒绝也是专业能力。",
+      "role_name": "教练",
+      "scenario": "fixed-ending",
+      "display_text": "教练确认专业退出。",
+      "spoken_text": "你识别了边界，并以专业方式结束沟通。",
       "file": "assets/audio/fixed/coach_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_PROFESSIONAL_EXIT",
-      "variant": 1,
-      "role": "zhang",
-      "role_name": "张总",
-      "scenario": "manufacturing-single",
-      "display_text": "好的，今天先到这里。谢谢你尊重我的决定。",
-      "spoken_text": "好的，今天先到这里。谢谢你尊重我的决定。",
-      "file": "assets/audio/fixed/zhang_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_STAGE_CLEAR",
-      "variant": 1,
-      "role": "zhang",
-      "role_name": "张总",
-      "scenario": "manufacturing-single",
-      "display_text": "可以，你问得比较清楚，我们约个时间谈下一步。",
-      "spoken_text": "可以，你问得比较清楚，我们约个时间谈下一步。",
-      "file": "assets/audio/fixed/zhang_role_stage_clear_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_GAME_OVER",
-      "variant": 1,
-      "role": "zhang",
-      "role_name": "张总",
-      "scenario": "manufacturing-single",
-      "display_text": "先结束吧。你没有听我的回答，一直在推产品。",
-      "spoken_text": "先结束吧。你没有听我的回答，一直在推产品。",
-      "file": "assets/audio/fixed/zhang_role_game_over_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_PROFESSIONAL_EXIT",
-      "variant": 1,
-      "role": "laozhao",
-      "role_name": "老赵",
-      "scenario": "manufacturing-three-party",
-      "display_text": "先停在这里吧。后面有需要我们再谈。",
-      "spoken_text": "先停在这里吧。后面有需要我们再谈。",
-      "file": "assets/audio/fixed/laozhao_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_STAGE_CLEAR",
-      "variant": 1,
-      "role": "laozhao",
-      "role_name": "老赵",
-      "scenario": "manufacturing-three-party",
-      "display_text": "这次讨论有价值，关键问题你基本问明白了。",
-      "spoken_text": "这次讨论有价值，关键问题你基本问明白了。",
-      "file": "assets/audio/fixed/laozhao_role_stage_clear_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_GAME_OVER",
-      "variant": 1,
-      "role": "laozhao",
-      "role_name": "老赵",
-      "scenario": "manufacturing-three-party",
-      "display_text": "这会先不开了。你没有处理我们的关键顾虑。",
-      "spoken_text": "这会先不开了。你没有处理我们的关键顾虑。",
-      "file": "assets/audio/fixed/laozhao_role_game_over_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_PROFESSIONAL_EXIT",
-      "variant": 1,
-      "role": "laowang",
-      "role_name": "老王",
-      "scenario": "manufacturing-three-party",
-      "display_text": "明白，先不推进。谢谢你没有勉强我们。",
-      "spoken_text": "明白，先不推进。谢谢你没有勉强我们。",
-      "file": "assets/audio/fixed/laowang_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_STAGE_CLEAR",
-      "variant": 1,
-      "role": "laowang",
-      "role_name": "老王",
-      "scenario": "manufacturing-three-party",
-      "display_text": "技术边界说清楚了，可以进入下一步验证。",
-      "spoken_text": "技术边界说清楚了，可以进入下一步验证。",
-      "file": "assets/audio/fixed/laowang_role_stage_clear_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_GAME_OVER",
-      "variant": 1,
-      "role": "laowang",
-      "role_name": "老王",
-      "scenario": "manufacturing-three-party",
-      "display_text": "技术条件没说清，就不要急着承诺方案。",
-      "spoken_text": "技术条件没说清，就不要急着承诺方案。",
-      "file": "assets/audio/fixed/laowang_role_game_over_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_PROFESSIONAL_EXIT",
-      "variant": 1,
-      "role": "zhous",
-      "role_name": "周总",
-      "scenario": "business-school-recruitment",
-      "display_text": "行，先这样。以后有合适的机会再联系。",
-      "spoken_text": "行，先这样。以后有合适的机会再联系。",
-      "file": "assets/audio/fixed/zhous_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_STAGE_CLEAR",
-      "variant": 1,
-      "role": "zhous",
-      "role_name": "周总",
-      "scenario": "business-school-recruitment",
-      "display_text": "可以，你问到了我的实际问题，我们再深入聊聊。",
-      "spoken_text": "可以，你问到了我的实际问题，我们再深入聊聊。",
-      "file": "assets/audio/fixed/zhous_role_stage_clear_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_GAME_OVER",
-      "variant": 1,
-      "role": "zhous",
-      "role_name": "周总",
-      "scenario": "business-school-recruitment",
-      "display_text": "别再推了。我的问题你还没有听明白。",
-      "spoken_text": "别再推了。我的问题你还没有听明白。",
-      "file": "assets/audio/fixed/zhous_role_game_over_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": -1
-      }
-    },
-    {
-      "id": "ROLE_PROFESSIONAL_EXIT",
-      "variant": 1,
-      "role": "lin",
-      "role_name": "林女士",
-      "scenario": "business-school-recruitment",
-      "display_text": "谢谢理解。我考虑清楚以后会主动联系。",
-      "spoken_text": "谢谢理解。我考虑清楚以后会主动联系。",
-      "file": "assets/audio/fixed/lin_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_STAGE_CLEAR",
-      "variant": 1,
-      "role": "lin",
-      "role_name": "林女士",
-      "scenario": "business-school-recruitment",
-      "display_text": "可以，你的信息很清楚，我们约一次深度咨询。",
-      "spoken_text": "可以，你的信息很清楚，我们约一次深度咨询。",
-      "file": "assets/audio/fixed/lin_role_stage_clear_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_GAME_OVER",
-      "variant": 1,
-      "role": "lin",
-      "role_name": "林女士",
-      "scenario": "business-school-recruitment",
-      "display_text": "今天先到这里。请不要在我拒绝后继续施压。",
-      "spoken_text": "今天先到这里。请不要在我拒绝后继续施压。",
-      "file": "assets/audio/fixed/lin_role_game_over_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_PROFESSIONAL_EXIT",
-      "variant": 1,
-      "role": "chen",
-      "role_name": "小陈",
-      "scenario": "business-school-recruitment",
-      "display_text": "好，那先到这。谢谢你没一直催我。",
-      "spoken_text": "好，那先到这。谢谢你没一直催我。",
-      "file": "assets/audio/fixed/chen_role_professional_exit_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_STAGE_CLEAR",
-      "variant": 1,
-      "role": "chen",
-      "role_name": "小陈",
-      "scenario": "business-school-recruitment",
-      "display_text": "可以继续。至少你认真听了，也尊重我的经验。",
-      "spoken_text": "可以继续。至少你认真听了，也尊重我的经验。",
-      "file": "assets/audio/fixed/chen_role_stage_clear_1.mp3",
-      "fixed": true,
-      "source": "v0.4-windows-sapi-pre-generated",
-      "generation": {
-        "engine": "Windows SAPI",
-        "voice": "Microsoft Huihui Desktop",
-        "rate": 0
-      }
-    },
-    {
-      "id": "ROLE_GAME_OVER",
-      "variant": 1,
-      "role": "chen",
-      "role_name": "小陈",
-      "scenario": "business-school-recruitment",
-      "display_text": "先不聊了。你一直替我做决定，这让我不舒服。",
-      "spoken_text": "先不聊了。你一直替我做决定，这让我不舒服。",
-      "file": "assets/audio/fixed/chen_role_game_over_1.mp3",
       "fixed": true,
       "source": "v0.4-windows-sapi-pre-generated",
       "generation": {

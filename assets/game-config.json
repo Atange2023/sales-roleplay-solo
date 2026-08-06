@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "dlcs": [
+    {
+      "id": "DLC01",
+      "name": "制造业",
+      "stages": [
+        {"id": "L01", "name": "第一次正式面谈", "scenario": "scenarios/zhang_dialogue.json"},
+        {"id": "L02", "name": "三人方案会", "scenario": "scenarios/three_party_dialogue.json"}
+      ]
+    },
+    {
+      "id": "DLC02",
+      "name": "商学院",
+      "stages": [
+        {"id": "L01", "name": "公开课后招生咨询", "scenario": "scenarios/business_school_dialogue.json"}
+      ]
+    }
+  ]
+}

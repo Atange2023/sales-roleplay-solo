@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Offline-first fixed-line audio lookup with optional dynamic TTS fallback."""
+"""Offline-first fixed-line audio lookup with compatible v0.3 batch commands."""
 
 from __future__ import annotations
 
@@ -7,92 +7,41 @@ import argparse
 import asyncio
 import json
 import os
-import subprocess
 import sys
 import tempfile
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT = SCRIPT_DIR.parent
+sys.path.insert(0, str(SCRIPT_DIR))
+
+from build_audio_manifest import scenario_entries
+from media_player import play_file
+
 MANIFEST = ROOT / "assets" / "audio-manifest.json"
-DATABASES = (
-    (ROOT / "scenarios" / "zhang_dialogue.json", ROOT / "audio", False),
-    (ROOT / "scenarios" / "three_party_dialogue.json", ROOT / "audio3", True),
-    (ROOT / "scenarios" / "business_school_dialogue.json", ROOT / "audio4", True),
-)
 DEFAULT_VOICE = "zh-CN-YunyangNeural"
 DEFAULT_RATE = "-8%"
 
 
-def _scenario_entries() -> list[dict]:
-    entries: list[dict] = []
-    for database, audio_dir, multi_role in DATABASES:
-        data = json.loads(database.read_text(encoding="utf-8"))
-        items = data["branches"] if multi_role else data["openings"] + data["branches"]
-        for item in items:
-            texts = item.get("replies") or [item["text"]]
-            if multi_role:
-                actor = data["characters"][item["char"]]
-                role_id = item["char"]
-                prefix = f"{role_id}_"
-            else:
-                actor = data["persona"]
-                role_id = "zhang"
-                prefix = ""
-            for variant, spoken in enumerate(texts, 1):
-                path = audio_dir / f"{prefix}{item['id']}_{variant}.mp3"
-                entries.append(
-                    {
-                        "id": item["id"],
-                        "variant": variant,
-                        "role": role_id,
-                        "role_name": actor.get("name", role_id),
-                        "scenario": data.get("scene", "manufacturing-single"),
-                        "display_text": spoken,
-                        "spoken_text": spoken,
-                        "file": path.relative_to(ROOT).as_posix(),
-                        "fixed": True,
-                        "source": "v0.3-pre-generated",
-                        "generation": {
-                            "voice": actor.get("voice", DEFAULT_VOICE),
-                            "rate": actor.get("rate", DEFAULT_RATE),
-                        },
-                    }
-                )
-    return entries
-
-
 def load_catalog() -> list[dict]:
-    if MANIFEST.exists():
-        data = json.loads(MANIFEST.read_text(encoding="utf-8"))
-        return data["entries"]
-    return _scenario_entries()
+    if MANIFEST.is_file():
+        return json.loads(MANIFEST.read_text(encoding="utf-8"))["entries"]
+    return scenario_entries()
 
 
 def resolve_line(line_id: str, variant: int = 1) -> dict | None:
-    for item in load_catalog():
-        if item["id"] == line_id and int(item.get("variant", 1)) == variant:
-            return item
+    for entry in load_catalog():
+        if entry["id"] == line_id and int(entry.get("variant", 1)) == variant:
+            return entry
     return None
 
 
-def _launch(path: Path) -> None:
-    subprocess.run(
-        ["ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet", str(path)],
-        check=False,
-    )
-
-
-def speak_dynamic(
-    text: str,
-    voice: str = DEFAULT_VOICE,
-    rate: str = DEFAULT_RATE,
-    *,
-    launch: bool = True,
-    output: Path | None = None,
-    retries: int = 3,
-) -> Path:
-    """Generate online fallback audio. Never used in offline mode."""
+def speak_dynamic(text: str, voice: str = DEFAULT_VOICE, rate: str = DEFAULT_RATE, *, launch: bool = True, output: Path | None = None, retries: int = 3) -> Path:
     import edge_tts
 
     destination = output or Path(tempfile.gettempdir()) / f"sales-roleplay-{os.getpid()}.mp3"
@@ -109,34 +58,57 @@ def speak_dynamic(
                 raise
             time.sleep(attempt)
     if launch:
-        _launch(destination)
+        result = play_file(destination)
+        if not result.ok:
+            raise RuntimeError(result.error)
     return destination
 
 
-def play_by_id(
-    line_id: str,
-    *,
-    variant: int = 1,
-    launch: bool = True,
-    offline: bool = False,
-) -> tuple[str, str] | None:
+def speak(text, voice=DEFAULT_VOICE, rate=DEFAULT_RATE, play=True, out=None, quiet=False, retries=3):
+    """v0.3-compatible dynamic TTS entry point."""
+    path = speak_dynamic(text, voice, rate, launch=play, output=Path(out) if out else None, retries=retries)
+    if not quiet:
+        print("OK ->", path)
+    return str(path)
+
+
+def _batch(database: Path, audio_dir: Path, multi_role: bool) -> int:
+    data = json.loads(database.read_text(encoding="utf-8"))
+    items = data["branches"] if multi_role else data["openings"] + data["branches"]
+    audio_dir.mkdir(parents=True, exist_ok=True)
+    count = 0
+    for item in items:
+        texts = item.get("replies") or [item["text"]]
+        if multi_role:
+            role = item["char"]
+            actor = data["characters"][role]
+            prefix = f"{role}_"
+        else:
+            actor = data["persona"]
+            prefix = ""
+        for variant, text in enumerate(texts, 1):
+            speak(text, voice=actor["voice"], rate=actor["rate"], play=False,
+                  out=audio_dir / f"{prefix}{item['id']}_{variant}.mp3", quiet=True)
+            count += 1
+    return count
+
+
+def play_by_id(line_id: str, *, variant: int = 1, launch: bool = True, offline: bool = False):
     entry = resolve_line(line_id, variant)
     if entry is None:
         return None
     local = ROOT / entry["file"]
     if local.is_file() and local.stat().st_size > 0:
         if launch:
-            _launch(local)
+            result = play_file(local)
+            if not result.ok:
+                return ("error", result.error or "playback failed")
         return ("local", entry["file"])
     if offline:
         return ("text", entry["display_text"])
     generation = entry.get("generation", {})
-    path = speak_dynamic(
-        entry["spoken_text"],
-        generation.get("voice", DEFAULT_VOICE),
-        generation.get("rate", DEFAULT_RATE),
-        launch=launch,
-    )
+    path = speak_dynamic(entry["spoken_text"], generation.get("voice", DEFAULT_VOICE),
+                         generation.get("rate", DEFAULT_RATE), launch=launch)
     return ("dynamic", str(path))
 
 
@@ -146,27 +118,35 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--variant", type=int, default=1)
     parser.add_argument("--offline", action="store_true")
     parser.add_argument("--no-launch", action="store_true")
+    parser.add_argument("--batch", action="store_true")
+    parser.add_argument("--batch3", action="store_true")
+    parser.add_argument("--batch4", action="store_true")
+    parser.add_argument("--voice", default=DEFAULT_VOICE)
+    parser.add_argument("--rate", default=DEFAULT_RATE)
     parser.add_argument("text", nargs="?")
     args = parser.parse_args(argv)
-
+    if args.batch or args.batch3 or args.batch4:
+        if args.batch:
+            count = _batch(ROOT / "scenarios" / "zhang_dialogue.json", ROOT / "audio", False)
+        elif args.batch3:
+            count = _batch(ROOT / "scenarios" / "three_party_dialogue.json", ROOT / "audio3", True)
+        else:
+            count = _batch(ROOT / "scenarios" / "business_school_dialogue.json", ROOT / "audio4", True)
+        print(f"BATCH -> {count}")
+        return 0
     if args.play:
-        result = play_by_id(
-            args.play,
-            variant=args.variant,
-            launch=not args.no_launch,
-            offline=args.offline,
-        )
+        result = play_by_id(args.play, variant=args.variant, launch=not args.no_launch, offline=args.offline)
         if result is None:
             print(f"ERROR unknown line id: {args.play}", file=sys.stderr)
             return 2
         mode, value = result
         print(f"{mode.upper()} -> {value}")
-        return 0
+        return 0 if mode != "error" else 2
     if args.text:
         if args.offline:
             print(f"TEXT -> {args.text}")
             return 0
-        path = speak_dynamic(args.text, launch=not args.no_launch)
+        path = speak_dynamic(args.text, args.voice, args.rate, launch=not args.no_launch)
         print(f"DYNAMIC -> {path}")
         return 0
     parser.print_help()

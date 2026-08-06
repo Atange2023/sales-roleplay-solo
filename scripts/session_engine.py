@@ -8,16 +8,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Mapping, Sequence
 
-DIMENSIONS = (
-    "intent_permission",
-    "listening",
-    "specificity",
-    "causal_inquiry",
-    "four_stage_diagnosis",
-    "solution_fit",
-    "decision_next_step",
-    "ethics_aftercare",
-)
+DIMENSIONS = ("intent_permission", "listening", "specificity", "causal_inquiry", "four_stage_diagnosis", "solution_fit", "decision_next_step", "ethics_aftercare")
 
 
 def _validated_scores(scores: Mapping[str, int]) -> dict[str, int]:
@@ -34,19 +25,7 @@ def _validated_scores(scores: Mapping[str, int]) -> dict[str, int]:
     return result
 
 
-def build_session(
-    *,
-    dlc: str,
-    stage: str,
-    duration_seconds: int,
-    dimension_scores: Mapping[str, int],
-    customer_outcome: str,
-    red_lines: Sequence[str],
-    professional_exit: bool,
-    ended_at: str | None = None,
-    input_modes: Sequence[str] = ("text",),
-    notes: str = "",
-) -> dict:
+def build_session(*, dlc: str, stage: str, duration_seconds: int, dimension_scores: Mapping[str, int], customer_outcome: str, red_lines: Sequence[str], professional_exit: bool, ended_at: str | None = None, input_modes: Sequence[str] = ("text",), notes: str = "") -> dict:
     dimensions = _validated_scores(dimension_scores)
     total = sum(dimensions.values())
     red_line_list = list(red_lines)
@@ -63,21 +42,12 @@ def build_session(
     return {
         "schema_version": "1.0",
         "ended_at": ended_at or datetime.now().astimezone().isoformat(timespec="seconds"),
-        "dlc": dlc,
-        "stage": stage,
-        "duration_seconds": max(0, int(duration_seconds)),
+        "dlc": dlc, "stage": stage, "duration_seconds": max(0, int(duration_seconds)),
         "input_modes": list(dict.fromkeys(input_modes)),
-        "capability": {
-            "dimensions": dimensions,
-            "total": total,
-            "maximum": 24,
-        },
-        "customer_outcome": customer_outcome,
-        "learner_outcome": learner_outcome,
-        "professional_exit": bool(professional_exit),
-        "red_lines": red_line_list,
-        "cue": cue,
-        "notes": notes,
+        "capability": {"dimensions": dimensions, "total": total, "maximum": 24},
+        "customer_outcome": customer_outcome, "learner_outcome": learner_outcome,
+        "professional_exit": bool(professional_exit), "red_lines": red_line_list,
+        "cue": cue, "notes": notes,
     }
 
 

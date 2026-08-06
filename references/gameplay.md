@@ -1,34 +1,27 @@
-# Gameplay
+# Gameplay flow
 
-## Session flow
+## Startup
 
-1. Show the DOS/MUD boot screen and play `assets/midi/boot.mid`.
-2. Select one existing DLC:
-   - Manufacturing L01: single visit with Zhang
-   - Manufacturing L02: three-party solution meeting
-   - Business school L01: recruitment consultation
-3. State privacy and input-mode boundaries.
-4. Start with a packaged role opening from `assets/audio-manifest.json`.
-5. Alternate learner turns and spoken customer responses. The display text may be longer than the low-latency spoken line.
-6. Accept `/voice` and `/text` at any turn. Voice uses local Windows recognition when available; failure returns to text.
-7. Finish when the customer advances, delays, refuses, is not a match, is referred, or the learner commits a red-line error.
-8. Score, log, play the matching MIDI cue, and offer the weekly report.
+Run the boot cue, tutorial, DLC menu, then the selected DLC's stage menu. Never collapse DLC and stage selection into one list.
 
-## Offline command
+The tutorial explains roles, question-first objective, per-turn coaching, professional exit, red lines, text/voice continuity, and pause/finish controls. Show it in full on first use; a returning learner may explicitly skip it.
 
-```powershell
-py scripts/roleplay.py --offline
-```
+## Stage play
 
-Use `--no-audio` for classrooms or automated validation. Text input remains fully usable for multiple learners in the same room.
+- Manufacturing DLC01-L01: Zhang single visit, 15–20 turns.
+- Manufacturing DLC01-L02: Zhang, Lao Zhao, and Lao Wang solution meeting, 20–25 turns; locked until DLC01-L01 passes.
+- Business school DLC02-L01: Zhou, Lin, or Chen recruitment consultation, 15–18 turns; independently unlocked from first use.
 
-## Fixed outcome cues
+Use v0.3 scenario scripts as the authoritative branch and pacing source. Rotate variants. Preserve checkpoint coaching in addition to the new teaching-mode feedback after every turn.
 
-| Learner outcome | MIDI | Meaning |
-| --- | --- | --- |
-| `stage_clear` | `stage-clear.mid` | Capability threshold met |
-| `professional_exit` | `professional-exit.mid` | Boundary recognized and respected |
-| `game_over` | `game-over.mid` | A real red-line error occurred |
-| perfect 24/24 | `achievement.mid` | All eight dimensions reached 3 |
+Recognize “暂停”, “继续”, “沉浸模式”, “教学模式”, and “结束并复盘”. Pausing preserves state. Finishing triggers the full review, media cue, session/progress write, and report offer.
 
-A customer refusal may pair with `professional_exit`. A customer advancement may still pair with `game_over` when the learner used pressure or deception.
+## Outcomes and cues
+
+- `stage_clear` → play `stage-clear`; unlock next stage.
+- `professional_exit` → play `professional-exit`; unlock next stage.
+- `needs_practice` → no unlock; offer same-stage retry.
+- `game_over` → play `game-over`; no unlock; identify the verified red line.
+- perfect 24/24 → play `achievement` after the normal outcome.
+
+Customer `refused` may pair with learner `professional_exit`. Customer `advanced` may pair with learner `game_over` if pressure or deception caused it.

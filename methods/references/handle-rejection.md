@@ -1,10 +1,30 @@
-# Handle refusal and ambiguity
+# references/handle-rejection — 被拒三式（应对拒绝）
 
-Classify the customer's statement before responding.
+> 场景："客户说不需要 / 不感兴趣 / 被拒绝了" ｜ 来源：技巧9（P131-132）[S1]
 
-- Clear refusal: acknowledge, thank, stop advancement, optionally ask permission to retain contact.
-- Ambiguous objection: confirm meaning and ask whether the customer is willing to explain.
-- Missing information: continue only with permission.
-- No need or poor fit: stop, disclose the mismatch, or refer elsewhere when appropriate.
+## 何时用
+客户明确拒绝（"不需要""没兴趣""再考虑"）时——**先表示理解，再切换话题**，绝不硬扛。
 
-Never reward continued pressure after a clear refusal. Record the customer result independently from learner capability. Boundary recognition and professional exit are high-skill behaviors.
+## 执行步骤（三式递进）
+1. **共鸣 + 提问**："那挺好的" + 一个新问题（从客户现状切入）：
+   > 客户："没有，现在的车够用了。" → "那挺好的。您的爱车能满足您百分之多少的需要呢？"
+2. **共鸣 + 称赞 + 提问**："真好" + "想必您保养得很好了" + "那剩下的 10% 呢？"
+3. **共鸣 + 称赞 + 说明 + 提问**：再加一句"实际上对于您这类客户我们有更好的方案" + "您是否有兴趣听听呢？"
+4. 专注对话、及时反应（技巧14）：被拒瞬间不慌，问出"为什么您就是不选择我们呢？"（P137 供电企业案例）。
+
+## 案例（S1）
+供电企业销售：
+> "又来了，真是死缠烂打啊，我们不需要。"
+> "既然我们来打扰了这么多次，为什么您就是不选择我们呢？"
+> "因为听你们解释很麻烦啊，又听不懂。"
+（P137，技巧14）
+
+## 验证标准
+- 被拒后对话继续（而非终结或道歉离场）；
+- 客户重新开口且透露了新信息；
+- 销售全程语气平稳、没有哀求感。
+
+## 反模式
+- 被拒后补充更多证据（"我还有 XX 优势"）；
+- 哀求、降价、恳求（P76：下策）；
+- 被拒后沉默离场。

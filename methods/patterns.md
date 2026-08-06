@@ -1,12 +1,20 @@
-# Consultative sales patterns
+# patterns — 提问销售法框架清单（Use X when Y）
 
-Use questions to help the customer clarify a decision; do not use questions to bypass autonomy.
+> 形式：实践者口吻（"用 X，当 Y"），供 Agent 快速选框架。
 
-1. Ask permission and clarify the current state.
-2. Make vague statements specific.
-3. Explore causes, impact, and priority.
-4. Confirm whether the customer wants to hear a proposal.
-5. Match only supported needs and state constraints.
-6. Let the customer decide the next step.
+| 框架 | 用（When） | 不用（When not） |
+| --- | --- | --- |
+| 开场提问（技巧1/3/4） | 初次接触、开场 3 秒 | 客户已明确表达购买意愿（直接谈需求） |
+| 万能三问 | 对话需要展开/深入/确认时 | 客户正在陈述（先听完再用"也就是说"确认） |
+| 被拒三式 | 客户拒绝、防御时 | 客户主动索取资料/报价时（直接给） |
+| 四步提问法 | 需求不清晰、要引导客户想清楚时 | 客户需求明确且急切（缩短为"问题+方案"） |
+| 平常心签单 | 临门一脚、客户犹豫时 | — |
+| 售后跟进（技巧19/20） | 成交后 2 周内、客户反馈模糊时 | — |
+| 同感表达（技巧7/8） | 客户分享个人/工作细节时 | 客户要数据、要方案时（回到专业顾问） |
 
-A clear refusal ends advancement. Thank the customer, stop selling, and ask permission before any future contact. A respectful professional exit can pass even when no sale advances.
+## 核心决策规则
+1. 没弄清需求之前，**不介绍产品**（P77 弹珠机比喻）。
+2. 客户每说一句，先**认同**再**提问**（三关键词：关注→收集→掌握）。
+3. 一切提问围绕"帮他"，一旦发现自己在"卖我"，立即切回提问。
+4. 被拒是信息不是终点——用三式继续。
+5. 成交不是结束，售后跟进才是销售的开始（P148）。

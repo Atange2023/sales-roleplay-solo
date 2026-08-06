@@ -1,18 +1,11 @@
-# Logs and weekly reporting
+# Local logs and weekly reports
 
-Sessions are local UTF-8 JSON Lines with schema version 1.0. The default path is `data/sessions.jsonl`; users may override it with `--log`.
+At finish, build a record with `scripts/session_engine.py` and append it to `data/sessions.jsonl`. Store duration, DLC, stage, input modes, all eight scores, learner outcome, customer outcome, red lines, and notes. Keep `data/` local and never upload it automatically.
 
-Each record contains timestamp, DLC, stage, duration, input modes, all eight dimension scores, total/max, customer outcome, learner outcome, professional-exit flag, red lines, cue, and optional notes.
-
-Export the current seven-day window:
+Export a leadership-readable seven-day report with:
 
 ```powershell
 py scripts/report.py --log data/sessions.jsonl --output-dir reports
 ```
 
-Outputs:
-
-- `weekly-report.html`: leadership-readable frequency, stages, duration, average score, trend, customer outcomes, and learner outcomes.
-- `weekly-report.csv`: portable row-level data for analysis.
-
-This is a training report, not a formal examination result. Delete the local JSONL and reports when the learner no longer wants them retained.
+The command writes UTF-8 HTML and CSV showing practice frequency, stages, duration, scores, outcomes, and trend. The report is for coaching review, not a formal examination record.
