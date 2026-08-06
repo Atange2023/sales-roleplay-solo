@@ -1,77 +1,33 @@
 ---
 name: sales-roleplay-solo
-description: 数字人语音销售陪练 v0.3：双行业DLC×关卡×多角色语音×复盘，Reasonix/DeepSeek V4为主，开箱即用
+description: Use when a user wants to practise, simulate, assess, or review a Chinese consultative-sales conversation with customer roleplay, spoken responses, objection handling, discovery questions, proposal timing, professional exit, or after-sales follow-up.
 ---
 
-# sales-roleplay-solo — 数字人语音销售陪练（v0.3 完整包）
+# Sales Roleplay Solo v0.4
 
-像打游戏一样练"提问销售法"：选行业（DLC）→ 选关卡 → 打关（数字人客户开口说话）→ 通关/失败 → 六维复盘。**本包为完整自包含版本**（含方法层、剧本、台词库、语音模块、145 条预合成语音、使用手册），复制即用。
+Run an offline-first Chinese sales practice game. Keep learner capability separate from the customer's autonomous decision.
 
-## 平台兼容
-- **Reasonix + DeepSeek V4**（推荐主平台）：本 Skill 是纯 Markdown playbook + 本地 Python 脚本，直接加载
-- **Codex（OpenAI）/ 豆包（办公）**：同为 Agent Skill 格式（SKILL.md + frontmatter），放入 skills 目录即可加载；语音合成走本地 edge-tts（需联网），播放走 ffplay
-- 不依赖特定模型能力：教练判定由运行中的 Agent 完成，语音本地合成
+## Start
 
-## 快速安装（Reasonix，约 5 分钟）
-1. `py -m pip install edge-tts`（语音用，可选——不装可纯文字练习；audio/ 已预合成 145 条）
-2. 把整个 `sales-roleplay-solo` 文件夹复制到 `<工作区>\.reasonix\skills\sales-roleplay-solo\`
-3. 重启 Reasonix，说"/sales-roleplay-solo 我要练销售开场"
+1. Read [gameplay.md](references/gameplay.md) before starting a session.
+2. Run `py scripts/roleplay.py --offline` for the DOS/MUD launcher.
+3. Let the learner switch between text and voice with `/text` and `/voice`. Keep text available whenever voice recognition is unavailable or disruptive.
+4. Play packaged fixed audio for every customer/system response. Resolve a line with `py scripts/tts_speak.py --play <ID> --offline`; use dynamic TTS only as an explicitly online fallback.
+5. End with one learner outcome and one independent customer outcome. Read [scoring.md](references/scoring.md) before scoring.
+6. Append the session log and export HTML/CSV when requested. Read [logs-and-reporting.md](references/logs-and-reporting.md).
 
-详细安装/使用/FAQ 见 `docs/usage_manual.md`。
+## Non-negotiable rules
 
-## 触发条件
-- 学员要练销售对话（"陪我练开场 / 模拟拜访 / 招生咨询 / 三人会谈"）。
-- 训练营/工作坊角色扮演环节需要"标准客户 + 关卡复盘"。
+- Treat a clear refusal as a boundary, not a puzzle. Stop advancing, thank the customer, and optionally ask permission to keep contact.
+- Allow `professional_exit` to pass when the learner identifies the boundary and exits well.
+- Use `game_over` only for real learner errors such as pressure after refusal, deception, ignoring material constraints, or unsafe promises.
+- Score eight observable capabilities at 0–3 each (maximum 24). Never add customer advancement to the capability score.
+- Keep fixed dialogue, MIDI, text practice, local logs, and reports usable without a network.
+- Do not use real customer personal data, secrets, or regulated information.
 
-## 目录结构
-```
-sales-roleplay-solo/
-├── SKILL.md                  主入口（本文件）
-├── methods/                  提问销售法方法层（原 question-selling）
-│   ├── references/           5 场景方法（开场/三问/被拒/四步/签单售后）
-│   ├── glossary.md patterns.md cheatsheet.md
-├── scenarios/                关卡剧本 + 台词库（制造业单人/三人、商学院）
-├── scripts/tts_speak.py      语音模块（合成+播放+批量）
-├── docs/                     关卡系统/复盘模板/复盘示例/调研/使用手册
-├── audio/ audio3/ audio4/    145 条预合成语音（开箱即用）
-└── LICENSE
-```
+## Load references as needed
 
-## 工作步骤（教练运行流程）
-
-### 0. 选关
-- **DLC-01 制造业**：L01 单人拜访（张总）/ L02 三人方案会（张总+老赵+老王）
-- **DLC-02 商学院**：L01 招生面谈（周总/林女士/小陈随机）
-
-### 1. 打关（多回合）
-- 单人/招生关（15–20 回合）：开局变体 → 回合循环（学员说→按判定表匹配→台词库选回应→播放语音→更新状态机 D/T/O）→ 三维度点评 → 结局三选一。
-- 三人关（20–25 回合）：三角色支持度 → 分支点 → 影响链判定。
-- 方法依据：`methods/references/` 对应场景文件（开场/三问/被拒三式/四步/签单售后）。
-
-### 2. 失败判定（阈值）
-- 红线（介绍产品/逼单/被拒补证据）累计 ≥2 → 提前收场；关键节点未正确提问提示 3 次 → 判定失败。
-- 失败后强制复盘，可重打/降级重打。
-
-### 3. 关卡复盘（通关或失败均输出）
-按 `docs/review_template.md`：六维评分 + 优点/优化（引用回合）+ 红线记录 + **理论出处**（原书页码 + 延伸学习）+ 下次建议。
-
-## 输出
-- 演练记录（回合摘要 + 计分表）
-- 关卡复盘报告（落盘存档）
-
-## 验收标准
-- 走完"选关→打关→复盘"闭环；复盘报告有数据与理论出处；失败判定按阈值执行。
-
-## 适用边界
-- 只练对话技能，不承诺成交；角色反应为"典型化"（多决策人场景见 DLC02-L02 规划）。
-- 台词匹配由教练（AI/人）完成，非自动语义引擎。
-- 语音依赖 edge-tts（需联网，中文男声仅 Yunjian/Yunxi/Yunxia/Yunyang）；断网可用文字模式。
-
-## 失败处理
-- 学员冷场 → 教练给 2 个开口方向（不代答）；反复红线 → 按阈值判失败转复盘；语音合成失败 → 降级文字模式。
-
-## 版本与路线图
-- v0.1 单人拜访 → v0.2 三人+关卡系统+复盘 → **v0.3（当前）双行业完整包** → v0.4 规划（家族企业双人会谈/Whisper 语音输入）
-
-## 版权与来源
-方法框架源自《销售就是会提问》（青木毅，天津人民出版社 2021），理论出处标注原书页码；商学院调研来源：维基百科《工商管理硕士》《Executive education》；剧本/台词/脚本为本仓库原创（MIT），不包含原书正文。
+- Read [audio-assets.md](references/audio-assets.md) for manifest fields, local-first lookup, generation provenance, and regeneration.
+- Read [portable-install.md](references/portable-install.md) when copying or installing the offline package.
+- Read [privacy-and-boundaries.md](references/privacy-and-boundaries.md) before enterprise workshops or voice input.
+- Use `py scripts/report.py --help` and `py scripts/roleplay.py --help` for CLI options.

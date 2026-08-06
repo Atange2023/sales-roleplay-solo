@@ -1,0 +1,2736 @@
+{
+  "schema_version": "1.0",
+  "generated_by": "scripts/build_audio_manifest.py",
+  "legacy_entry_count": 145,
+  "fixed_v04_entry_count": 24,
+  "entries": [
+    {
+      "id": "B0_open_chen",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "嗯……我爸让我来听听的。你们这班，都是些什么人在上？",
+      "spoken_text": "嗯……我爸让我来听听的。你们这班，都是些什么人在上？",
+      "file": "audio4/chen_B0_open_chen_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B0_open_chen",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "我是被家里安排来听公开课的，随便看看。你们同学都什么背景？",
+      "spoken_text": "我是被家里安排来听公开课的，随便看看。你们同学都什么背景？",
+      "file": "audio4/chen_B0_open_chen_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B1_why_chen",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "我管供应链，管了两年，说实话很多事都是摸着石头过河。我爸说我不系统，我不服，但……他说得也没错。",
+      "spoken_text": "我管供应链，管了两年，说实话很多事都是摸着石头过河。我爸说我不系统，我不服，但……他说得也没错。",
+      "file": "audio4/chen_B1_why_chen_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B1_why_chen",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "想学点公司治理的东西，顺便看看同辈的都在怎么干。",
+      "spoken_text": "想学点公司治理的东西，顺便看看同辈的都在怎么干。",
+      "file": "audio4/chen_B1_why_chen_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B2_concern_chen",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "我爸花钱倒是不会说什么，但我怕他觉得我又在'交学费学了个寂寞'。",
+      "spoken_text": "我爸花钱倒是不会说什么，但我怕他觉得我又在'交学费学了个寂寞'。",
+      "file": "audio4/chen_B2_concern_chen_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B2_concern_chen",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "我担心的是同学层次——花这个钱，得跟值当的人一起学才有意思。",
+      "spoken_text": "我担心的是同学层次——花这个钱，得跟值当的人一起学才有意思。",
+      "file": "audio4/chen_B2_concern_chen_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B3_push",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "我再考虑考虑吧。",
+      "spoken_text": "我再考虑考虑吧。",
+      "file": "audio4/chen_B3_push_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B3_push",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "这事得跟我爸商量，你别急。",
+      "spoken_text": "这事得跟我爸商量，你别急。",
+      "file": "audio4/chen_B3_push_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B3_respect_chen",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "我负责供应链，这两年确实做了些改革，物流成本降了一截。你说得对，我不是什么都不懂的二代。",
+      "spoken_text": "我负责供应链，这两年确实做了些改革，物流成本降了一截。你说得对，我不是什么都不懂的二代。",
+      "file": "audio4/chen_B3_respect_chen_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B3_respect_chen",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "你这么说，倒是难得——来这儿的人都把我当小孩。",
+      "spoken_text": "你这么说，倒是难得——来这儿的人都把我当小孩。",
+      "file": "audio4/chen_B3_respect_chen_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B4_chen_next",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "下期公开课什么时候？我想带我爸来看看，让他知道我在认真搞。",
+      "spoken_text": "下期公开课什么时候？我想带我爸来看看，让他知道我在认真搞。",
+      "file": "audio4/chen_B4_chen_next_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "B4_chen_next",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "你们有校友活动吗？我想先参加一次，看看圈子。",
+      "spoken_text": "你们有校友活动吗？我想先参加一次，看看圈子。",
+      "file": "audio4/chen_B4_chen_next_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "END_deal",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "行，材料我下周交，你到时候带我去见见招生老师。",
+      "spoken_text": "行，材料我下周交，你到时候带我去见见招生老师。",
+      "file": "audio4/chen_END_deal_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "END_deal",
+      "variant": 2,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "就这么定了，先报专题营试试，好的话再考虑研修班。",
+      "spoken_text": "就这么定了，先报专题营试试，好的话再考虑研修班。",
+      "file": "audio4/chen_END_deal_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-10%"
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "先不聊了。你一直替我做决定，这让我不舒服。",
+      "spoken_text": "先不聊了。你一直替我做决定，这让我不舒服。",
+      "file": "assets/audio/fixed/chen_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "好，那先到这。谢谢你没一直催我。",
+      "spoken_text": "好，那先到这。谢谢你没一直催我。",
+      "file": "assets/audio/fixed/chen_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "chen",
+      "role_name": "小陈",
+      "scenario": "business-school-recruitment",
+      "display_text": "可以继续。至少你认真听了，也尊重我的经验。",
+      "spoken_text": "可以继续。至少你认真听了，也尊重我的经验。",
+      "file": "assets/audio/fixed/chen_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "B0_open_lin",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "你好，我是朋友介绍来的。今天讲得挺有启发，想问下你们这个班具体怎么安排？",
+      "spoken_text": "你好，我是朋友介绍来的。今天讲得挺有启发，想问下你们这个班具体怎么安排？",
+      "file": "audio4/lin_B0_open_lin_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B0_open_lin",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "您好。我听了一场，觉得讲得不错，想了解一下你们的学习项目。",
+      "spoken_text": "您好。我听了一场，觉得讲得不错，想了解一下你们的学习项目。",
+      "file": "audio4/lin_B0_open_lin_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B1_why_lin",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "我做了七八年销售管理，业绩一直不错，但再往上走，光靠业绩不够了，得补系统的东西。",
+      "spoken_text": "我做了七八年销售管理，业绩一直不错，但再往上走，光靠业绩不够了，得补系统的东西。",
+      "file": "audio4/lin_B1_why_lin_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B1_why_lin",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "说实话我想再进一步，公司里学历这块是短板，我自己也想系统性充充电。",
+      "spoken_text": "说实话我想再进一步，公司里学历这块是短板，我自己也想系统性充充电。",
+      "file": "audio4/lin_B1_why_lin_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B2_concern_lin",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "公司预算要走审批流程，我得上个报告说服 HR——要是他们不批，我自己掏这个钱压力挺大。",
+      "spoken_text": "公司预算要走审批流程，我得上个报告说服 HR——要是他们不批，我自己掏这个钱压力挺大。",
+      "file": "audio4/lin_B2_concern_lin_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B2_concern_lin",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "主要是时间，我出差多，一周两次课，怕坚持不下来。",
+      "spoken_text": "主要是时间，我出差多，一周两次课，怕坚持不下来。",
+      "file": "audio4/lin_B2_concern_lin_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B2_direct",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "没有没有，我再想想。",
+      "spoken_text": "没有没有，我再想想。",
+      "file": "audio4/lin_B2_direct_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B2_direct",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "哈哈，你这么一问我还真不知道怎么接，我回去想想吧。",
+      "spoken_text": "哈哈，你这么一问我还真不知道怎么接，我回去想想吧。",
+      "file": "audio4/lin_B2_direct_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B3_roi_lin",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "这个倒是实用，我写报告正愁没数据。你们有现成的？",
+      "spoken_text": "这个倒是实用，我写报告正愁没数据。你们有现成的？",
+      "file": "audio4/lin_B3_roi_lin_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B3_roi_lin",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "要是能帮我算清楚投入产出，我汇报也好开口。",
+      "spoken_text": "要是能帮我算清楚投入产出，我汇报也好开口。",
+      "file": "audio4/lin_B3_roi_lin_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B4_warm",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "可以，这周六下午我有空，约个深度咨询吧，我把 HR 那边的顾虑一起问清楚。",
+      "spoken_text": "可以，这周六下午我有空，约个深度咨询吧，我把 HR 那边的顾虑一起问清楚。",
+      "file": "audio4/lin_B4_warm_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "B4_warm",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "那你先把项目资料和那个 ROI 摘要发我，我看看再约你。",
+      "spoken_text": "那你先把项目资料和那个 ROI 摘要发我，我看看再约你。",
+      "file": "audio4/lin_B4_warm_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "END_keep",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "行，资料发我邮箱吧，我看看再联系你。",
+      "spoken_text": "行，资料发我邮箱吧，我看看再联系你。",
+      "file": "audio4/lin_END_keep_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "END_keep",
+      "variant": 2,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "我回去想想，有需要会找你的。",
+      "spoken_text": "我回去想想，有需要会找你的。",
+      "file": "audio4/lin_END_keep_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "rate": "+0%"
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "今天先到这里。请不要在我拒绝后继续施压。",
+      "spoken_text": "今天先到这里。请不要在我拒绝后继续施压。",
+      "file": "assets/audio/fixed/lin_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "谢谢理解。我考虑清楚以后会主动联系。",
+      "spoken_text": "谢谢理解。我考虑清楚以后会主动联系。",
+      "file": "assets/audio/fixed/lin_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "lin",
+      "role_name": "林女士",
+      "scenario": "business-school-recruitment",
+      "display_text": "可以，你的信息很清楚，我们约一次深度咨询。",
+      "spoken_text": "可以，你的信息很清楚，我们约一次深度咨询。",
+      "file": "assets/audio/fixed/lin_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "B0_generic",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "先了解一下吧，不急。",
+      "spoken_text": "先了解一下吧，不急。",
+      "file": "audio4/zhous_B0_generic_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_generic",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "我还没想好要不要报，就是先问问。",
+      "spoken_text": "我还没想好要不要报，就是先问问。",
+      "file": "audio4/zhous_B0_generic_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_open_zhous",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "老师讲得倒是有点意思，就是不知道我们这种小厂能不能用上。你贵姓？",
+      "spoken_text": "老师讲得倒是有点意思，就是不知道我们这种小厂能不能用上。你贵姓？",
+      "file": "audio4/zhous_B0_open_zhous_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_open_zhous",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "今天讲 AI 转型，听着热闹，可我们厂连个 IT 都没有，咋弄？",
+      "spoken_text": "今天讲 AI 转型，听着热闹，可我们厂连个 IT 都没有，咋弄？",
+      "file": "audio4/zhous_B0_open_zhous_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_pitch",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "这些我在宣传册上都看过了，能说点不一样的么？",
+      "spoken_text": "这些我在宣传册上都看过了，能说点不一样的么？",
+      "file": "audio4/zhous_B0_pitch_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_pitch",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "师资强、排名高，这些我都知道，问题是我用不用得上。",
+      "spoken_text": "师资强、排名高，这些我都知道，问题是我用不用得上。",
+      "file": "audio4/zhous_B0_pitch_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_status",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "厂里就我一个拍板的，下面一群跟了十几年的老员工，管松了乱、管紧了走。",
+      "spoken_text": "厂里就我一个拍板的，下面一群跟了十几年的老员工，管松了乱、管紧了走。",
+      "file": "audio4/zhous_B1_status_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_status",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "我一周在厂里五天半，实在抽不出整块时间。",
+      "spoken_text": "我一周在厂里五天半，实在抽不出整块时间。",
+      "file": "audio4/zhous_B1_status_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_why_zhous",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "你问到这个，我倒想说说——厂里管得乱，人难招，老师傅走了技术就断层。AI 我也说不清能帮啥，但总得找出路。",
+      "spoken_text": "你问到这个，我倒想说说——厂里管得乱，人难招，老师傅走了技术就断层。AI 我也说不清能帮啥，但总得找出路。",
+      "file": "audio4/zhous_B1_why_zhous_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_why_zhous",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "说白了，现在订单不好拿，成本压不下来，同行都上自动化了，我再不动就晚了。",
+      "spoken_text": "说白了，现在订单不好拿，成本压不下来，同行都上自动化了，我再不动就晚了。",
+      "file": "audio4/zhous_B1_why_zhous_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B2_concern_zhous",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "最大的障碍？钱是一方面，主要是我怕花了大价钱学一堆用不上的。",
+      "spoken_text": "最大的障碍？钱是一方面，主要是我怕花了大价钱学一堆用不上的。",
+      "file": "audio4/zhous_B2_concern_zhous_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B2_concern_zhous",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "学费我打听过，不便宜。加上我得停厂里的活来上课，这笔账得算清楚。",
+      "spoken_text": "学费我打听过，不便宜。加上我得停厂里的活来上课，这笔账得算清楚。",
+      "file": "audio4/zhous_B2_concern_zhous_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B2_past",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "上过，机构班、总裁班都上过，讲得都是理论，回来一点用没有。",
+      "spoken_text": "上过，机构班、总裁班都上过，讲得都是理论，回来一点用没有。",
+      "file": "audio4/zhous_B2_past_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B2_past",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "听过几次课，有的就是卖课现场，所以我今天也挺谨慎的。",
+      "spoken_text": "听过几次课，有的就是卖课现场，所以我今天也挺谨慎的。",
+      "file": "audio4/zhous_B2_past_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B3_case_zhous",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "真有上期学员是机械厂的？他后来怎么弄的？",
+      "spoken_text": "真有上期学员是机械厂的？他后来怎么弄的？",
+      "file": "audio4/zhous_B3_case_zhous_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B3_case_zhous",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "要是能先看看同行的做法，那倒可以听听。",
+      "spoken_text": "要是能先看看同行的做法，那倒可以听听。",
+      "file": "audio4/zhous_B3_case_zhous_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B4_hot",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "行，那你下周四有空吗？我带厂里两个骨干一起来你们学校坐坐，当面聊。",
+      "spoken_text": "行，那你下周四有空吗？我带厂里两个骨干一起来你们学校坐坐，当面聊。",
+      "file": "audio4/zhous_B4_hot_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B4_hot",
+      "variant": 2,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "这样吧，你先把你们那个 AI 专题营的材料给我，我回去细看。",
+      "spoken_text": "这样吧，你先把你们那个 AI 专题营的材料给我，我回去细看。",
+      "file": "audio4/zhous_B4_hot_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "别再推了。我的问题你还没有听明白。",
+      "spoken_text": "别再推了。我的问题你还没有听明白。",
+      "file": "assets/audio/fixed/zhous_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "行，先这样。以后有合适的机会再联系。",
+      "spoken_text": "行，先这样。以后有合适的机会再联系。",
+      "file": "assets/audio/fixed/zhous_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "zhous",
+      "role_name": "周总",
+      "scenario": "business-school-recruitment",
+      "display_text": "可以，你问到了我的实际问题，我们再深入聊聊。",
+      "spoken_text": "可以，你问到了我的实际问题，我们再深入聊聊。",
+      "file": "assets/audio/fixed/zhous_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "B1_generic",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "没什么需要帮忙的。公司开了二十年了，该有的都有。",
+      "spoken_text": "没什么需要帮忙的。公司开了二十年了，该有的都有。",
+      "file": "audio/B1_generic_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B1_generic",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "我这儿还真没什么要帮忙的，车间那点事我们自己老师在处理。",
+      "spoken_text": "我这儿还真没什么要帮忙的，车间那点事我们自己老师在处理。",
+      "file": "audio/B1_generic_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B1_intro",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你先别急着介绍。你知道我们是做什么的吗？",
+      "spoken_text": "你先别急着介绍。你知道我们是做什么的吗？",
+      "file": "audio/B1_intro_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B1_intro",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "嗯嗯，我听不太懂这些专业词。你直接说重点。",
+      "spoken_text": "嗯嗯，我听不太懂这些专业词。你直接说重点。",
+      "file": "audio/B1_intro_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B1_motivation",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "小李说你们AI能让车间少加点班。说实话我不太信，但既然来了就聊聊呗。",
+      "spoken_text": "小李说你们AI能让车间少加点班。说实话我不太信，但既然来了就聊聊呗。",
+      "file": "audio/B1_motivation_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B1_motivation",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "是小李说你们做的东西跟车间有关系，我才让见一面。",
+      "spoken_text": "是小李说你们做的东西跟车间有关系，我才让见一面。",
+      "file": "audio/B1_motivation_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_cause",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "销售接单不看车间忙不忙，两边各管各的，对不上。",
+      "spoken_text": "销售接单不看车间忙不忙，两边各管各的，对不上。",
+      "file": "audio/B2_cause_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_cause",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "主要就是销售那边只管签，不管我们做不做得出来。",
+      "spoken_text": "主要就是销售那边只管签，不管我们做不做得出来。",
+      "file": "audio/B2_cause_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_delivery",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "订单一多排产就乱，交期老延误，这个月被客户催了三次了。",
+      "spoken_text": "订单一多排产就乱，交期老延误，这个月被客户催了三次了。",
+      "file": "audio/B2_delivery_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_delivery",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "最近交期一直在拖，客户都开始有意见了。",
+      "spoken_text": "最近交期一直在拖，客户都开始有意见了。",
+      "file": "audio/B2_delivery_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_schedule",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "排产靠车间主任拍脑袋，销售签了单就砸下来，车间加班也赶不出来。",
+      "spoken_text": "排产靠车间主任拍脑袋，销售签了单就砸下来，车间加班也赶不出来。",
+      "file": "audio/B2_schedule_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_schedule",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "怎么排产？说难听点就是车间主任的经验，人累了就排不动。",
+      "spoken_text": "怎么排产？说难听点就是车间主任的经验，人累了就排不动。",
+      "file": "audio/B2_schedule_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_sell",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "先别急着卖，我还没想清楚自己要啥。",
+      "spoken_text": "先别急着卖，我还没想清楚自己要啥。",
+      "file": "audio/B2_sell_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_sell",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "上过一回当了，你别上来就推销。",
+      "spoken_text": "上过一回当了，你别上来就推销。",
+      "file": "audio/B2_sell_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_team",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "老师傅年纪大了，年轻人又不愿意进厂，人手就是紧。",
+      "spoken_text": "老师傅年纪大了，年轻人又不愿意进厂，人手就是紧。",
+      "file": "audio/B2_team_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B2_team",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "老师傅快退休了，新人接不上，这是我最愁的事。",
+      "spoken_text": "老师傅快退休了，新人接不上，这是我最愁的事。",
+      "file": "audio/B2_team_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_avoid",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你还有别的事吗？我三点还有个会。",
+      "spoken_text": "你还有别的事吗？我三点还有个会。",
+      "file": "audio/B3_avoid_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_avoid",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "嗯，这些都不急，你继续说。",
+      "spoken_text": "嗯，这些都不急，你继续说。",
+      "file": "audio/B3_avoid_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_confirm",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "对，就是这个意思。",
+      "spoken_text": "对，就是这个意思。",
+      "file": "audio/B3_confirm_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_confirm",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你算说到点子上了。",
+      "spoken_text": "你算说到点子上了。",
+      "file": "audio/B3_confirm_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_history",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "上过系统、换过排产员，折腾一圈，老师傅不买账，该延期还是延期。",
+      "spoken_text": "上过系统、换过排产员，折腾一圈，老师傅不买账，该延期还是延期。",
+      "file": "audio/B3_history_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_history",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "三十多万上了一套系统，实施大半年，车间没人用，最后打水漂。",
+      "spoken_text": "三十多万上了一套系统，实施大半年，车间没人用，最后打水漂。",
+      "file": "audio/B3_history_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_loss",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "客户罚钱加退单，少说二三十万。这个月光催货，我就丢了一个六十万的老客户。",
+      "spoken_text": "客户罚钱加退单，少说二三十万。这个月光催货，我就丢了一个六十万的老客户。",
+      "file": "audio/B3_loss_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_loss",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "一次延期至少亏二十万，还不算口碑。这笔账我天天在算。",
+      "spoken_text": "一次延期至少亏二十万，还不算口碑。这笔账我天天在算。",
+      "file": "audio/B3_loss_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_master",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "电脑排的不考虑人——老王焊工手艺好但腰不好，电脑不知道。他们排了二十年，人都在脑子里。",
+      "spoken_text": "电脑排的不考虑人——老王焊工手艺好但腰不好，电脑不知道。他们排了二十年，人都在脑子里。",
+      "file": "audio/B3_master_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B3_master",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "老师傅不是不信电脑，是不信没人把他们当回事。",
+      "spoken_text": "老师傅不是不信电脑，是不信没人把他们当回事。",
+      "file": "audio/B3_master_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_ask",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "项目负责人跳槽、没人管、合同没写退款条款——说白了，没把我们当回事。",
+      "spoken_text": "项目负责人跳槽、没人管、合同没写退款条款——说白了，没把我们当回事。",
+      "file": "audio/B4_ask_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_ask",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "实施到一半换人，拖了半年，最后钱退了一部分，系统瘫在那儿。",
+      "spoken_text": "实施到一半换人，拖了半年，最后钱退了一部分，系统瘫在那儿。",
+      "file": "audio/B4_ask_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_bragging",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你们几家都这么说。",
+      "spoken_text": "你们几家都这么说。",
+      "file": "audio/B4_bragging_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_bragging",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "这话我听得耳朵起茧了。",
+      "spoken_text": "这话我听得耳朵起茧了。",
+      "file": "audio/B4_bragging_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_contract",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "写死？这个倒是实在。",
+      "spoken_text": "写死？这个倒是实在。",
+      "file": "audio/B4_contract_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_contract",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你敢写进合同，我就敢信你。",
+      "spoken_text": "你敢写进合同，我就敢信你。",
+      "file": "audio/B4_contract_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_email",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "行，发我邮箱吧，我回头看看。",
+      "spoken_text": "行，发我邮箱吧，我回头看看。",
+      "file": "audio/B5_email_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_email",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你把资料发过来，我看看再说。",
+      "spoken_text": "你把资料发过来，我看看再说。",
+      "file": "audio/B5_email_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_installment",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "分期验收……这话头回听供应商说，实在。不过空口无凭，你写清楚带来。",
+      "spoken_text": "分期验收……这话头回听供应商说，实在。不过空口无凭，你写清楚带来。",
+      "file": "audio/B5_installment_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_installment",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "你们肯先试、有把握再签约，这话实在。下周把方案带来。",
+      "spoken_text": "你们肯先试、有把握再签约，这话实在。下周把方案带来。",
+      "file": "audio/B5_installment_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_pilot",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "先拿一条产线试一个月？这个可以试试。",
+      "spoken_text": "先拿一条产线试一个月？这个可以试试。",
+      "file": "audio/B5_pilot_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_pilot",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "要是真能先试，那倒好说。",
+      "spoken_text": "要是真能先试，那倒好说。",
+      "file": "audio/B5_pilot_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_push",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "这也太急了，我要再想想。",
+      "spoken_text": "这也太急了，我要再想想。",
+      "file": "audio/B5_push_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_push",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "今天定不了，这种事急不得。",
+      "spoken_text": "今天定不了，这种事急不得。",
+      "file": "audio/B5_push_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_time",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "下周三上午九点半吧，车间主任老赵也在，一起听。",
+      "spoken_text": "下周三上午九点半吧，车间主任老赵也在，一起听。",
+      "file": "audio/B5_time_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B5_time",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "就下周三吧，上午我都在。",
+      "spoken_text": "就下周三吧，上午我都在。",
+      "file": "audio/B5_time_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_deal",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "先拿一条产线试一个月，行的话再推。就这么定。",
+      "spoken_text": "先拿一条产线试一个月，行的话再推。就这么定。",
+      "file": "audio/END_deal_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_deal",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "可以，先试一个月，看效果说话。",
+      "spoken_text": "可以，先试一个月，看效果说话。",
+      "file": "audio/END_deal_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_followup",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "那就这么说定了，下周三九点半，带上方案和老赵一起聊。",
+      "spoken_text": "那就这么说定了，下周三九点半，带上方案和老赵一起聊。",
+      "file": "audio/END_followup_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_followup",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "行，下次来把老师傅也叫上，当面聊聊试试。",
+      "spoken_text": "行，下次来把老师傅也叫上，当面聊聊试试。",
+      "file": "audio/END_followup_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_keep",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "今天就到这儿吧。你人挺实在，以后有需要再联系。",
+      "spoken_text": "今天就到这儿吧。你人挺实在，以后有需要再联系。",
+      "file": "audio/END_keep_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_keep",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "这事我们暂时用不上，不过保持联系，行业小，以后常来往。",
+      "spoken_text": "这事我们暂时用不上，不过保持联系，行业小，以后常来往。",
+      "file": "audio/END_keep_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "先结束吧。你没有听我的回答，一直在推产品。",
+      "spoken_text": "先结束吧。你没有听我的回答，一直在推产品。",
+      "file": "assets/audio/fixed/zhang_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "好的，今天先到这里。谢谢你尊重我的决定。",
+      "spoken_text": "好的，今天先到这里。谢谢你尊重我的决定。",
+      "file": "assets/audio/fixed/zhang_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "可以，你问得比较清楚，我们约个时间谈下一步。",
+      "spoken_text": "可以，你问得比较清楚，我们约个时间谈下一步。",
+      "file": "assets/audio/fixed/zhang_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "V1_standard",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "坐吧。小李说你是做AI的？我这人不太懂这些，你有什么事，直说吧。",
+      "spoken_text": "坐吧。小李说你是做AI的？我这人不太懂这些，你有什么事，直说吧。",
+      "file": "audio/V1_standard_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "V2_doubt",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "AI啊？前前后后来了好几拨，讲得都好听，没一个真落地的。你直接说，你能给我带来什么？",
+      "spoken_text": "AI啊？前前后后来了好几拨，讲得都好听，没一个真落地的。你直接说，你能给我带来什么？",
+      "file": "audio/V2_doubt_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "V3_warm",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "manufacturing-single",
+      "display_text": "来了来了，小李提你好几次了。来，先喝口茶，你们AI现在都玩些什么？",
+      "spoken_text": "来了来了，小李提你好几次了。来，先喝口茶，你们AI现在都玩些什么？",
+      "file": "audio/V3_warm_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "老王",
+      "scenario": "manufacturing-three-party",
+      "display_text": "技术条件没说清，就不要急着承诺方案。",
+      "spoken_text": "技术条件没说清，就不要急着承诺方案。",
+      "file": "assets/audio/fixed/laowang_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "老王",
+      "scenario": "manufacturing-three-party",
+      "display_text": "明白，先不推进。谢谢你没有勉强我们。",
+      "spoken_text": "明白，先不推进。谢谢你没有勉强我们。",
+      "file": "assets/audio/fixed/laowang_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "老王",
+      "scenario": "manufacturing-three-party",
+      "display_text": "技术边界说清楚了，可以进入下一步验证。",
+      "spoken_text": "技术边界说清楚了，可以进入下一步验证。",
+      "file": "assets/audio/fixed/laowang_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "ROLE_GAME_OVER",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "老赵",
+      "scenario": "manufacturing-three-party",
+      "display_text": "这会先不开了。你没有处理我们的关键顾虑。",
+      "spoken_text": "这会先不开了。你没有处理我们的关键顾虑。",
+      "file": "assets/audio/fixed/laozhao_role_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "老赵",
+      "scenario": "manufacturing-three-party",
+      "display_text": "先停在这里吧。后面有需要我们再谈。",
+      "spoken_text": "先停在这里吧。后面有需要我们再谈。",
+      "file": "assets/audio/fixed/laozhao_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_STAGE_CLEAR",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "老赵",
+      "scenario": "manufacturing-three-party",
+      "display_text": "这次讨论有价值，关键问题你基本问明白了。",
+      "spoken_text": "这次讨论有价值，关键问题你基本问明白了。",
+      "file": "assets/audio/fixed/laozhao_role_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": -1
+      }
+    },
+    {
+      "id": "ROLE_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "system",
+      "display_text": "专业退出确认。尊重拒绝也是专业能力。",
+      "spoken_text": "专业退出确认。尊重拒绝也是专业能力。",
+      "file": "assets/audio/fixed/coach_role_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "SYS_ACHIEVEMENT",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "system",
+      "display_text": "成就解锁。",
+      "spoken_text": "成就解锁。八项能力全部达到最高等级。",
+      "file": "assets/audio/fixed/coach_sys_achievement_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "SYS_BOOT",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "system",
+      "display_text": "系统启动。请选择训练行业和关卡。",
+      "spoken_text": "销售陪练系统已启动，请选择训练行业和关卡。",
+      "file": "assets/audio/fixed/coach_sys_boot_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "SYS_GAME_OVER",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "system",
+      "display_text": "本轮出现真实失误。",
+      "spoken_text": "本轮出现真实失误。请复盘后再次挑战。",
+      "file": "assets/audio/fixed/coach_sys_game_over_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "SYS_PROFESSIONAL_EXIT",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "system",
+      "display_text": "专业退出，边界识别正确。",
+      "spoken_text": "专业退出。你尊重了客户边界，本轮训练通过。",
+      "file": "assets/audio/fixed/coach_sys_professional_exit_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "SYS_STAGE_CLEAR",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "system",
+      "display_text": "关卡通过。",
+      "spoken_text": "关卡通过。你完成了本轮训练目标。",
+      "file": "assets/audio/fixed/coach_sys_stage_clear_1.mp3",
+      "fixed": true,
+      "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "B0_ask_laowang",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "嗨，我个老头子懂啥。你们年轻人搞的东西……不过既然问到我，我就说两句。",
+      "spoken_text": "嗨，我个老头子懂啥。你们年轻人搞的东西……不过既然问到我，我就说两句。",
+      "file": "audio3/laowang_B0_ask_laowang_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B0_ask_laowang",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "哎呀，问我？我干了二十年活，哪懂什么电脑。你有话直说。",
+      "spoken_text": "哎呀，问我？我干了二十年活，哪懂什么电脑。你有话直说。",
+      "file": "audio3/laowang_B0_ask_laowang_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_consult",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "你别说，这我还真能讲两句——机床的脾气、谁手快谁手稳，电脑上可没写着。",
+      "spoken_text": "你别说，这我还真能讲两句——机床的脾气、谁手快谁手稳，电脑上可没写着。",
+      "file": "audio3/laowang_B2_consult_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_consult",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "哎呀，难得有人问这个。排产啊，讲究大了，光靠算数不行。",
+      "spoken_text": "哎呀，难得有人问这个。排产啊，讲究大了，光靠算数不行。",
+      "file": "audio3/laowang_B2_consult_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_doubt",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "我排了二十年产，电脑懂个啥？机床的脾气它知道吗？",
+      "spoken_text": "我排了二十年产，电脑懂个啥？机床的脾气它知道吗？",
+      "file": "audio3/laowang_B2_doubt_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_doubt",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "老了老了，跟不上你们这些新东西了。反正我快退休了。",
+      "spoken_text": "老了老了，跟不上你们这些新东西了。反正我快退休了。",
+      "file": "audio3/laowang_B2_doubt_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_ignore",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "（咳嗽一声，低头喝茶）……你们聊，我先去车间了。",
+      "spoken_text": "（咳嗽一声，低头喝茶）……你们聊，我先去车间了。",
+      "file": "audio3/laowang_B2_ignore_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_ignore",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "行行，你们年轻人的事，我就不掺和了。",
+      "spoken_text": "行行，你们年轻人的事，我就不掺和了。",
+      "file": "audio3/laowang_B2_ignore_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_respect",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "嗯……要是真把我们的话记进去，那倒……行吧，这我头回听说。",
+      "spoken_text": "嗯……要是真把我们的话记进去，那倒……行吧，这我头回听说。",
+      "file": "audio3/laowang_B2_respect_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_respect",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "你们要是真听我们老师傅的意见，那就不算瞎搞。",
+      "spoken_text": "你们要是真听我们老师傅的意见，那就不算瞎搞。",
+      "file": "audio3/laowang_B2_respect_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_tech",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "听不懂，听不懂。老了老了，你们年轻人定就行。",
+      "spoken_text": "听不懂，听不懂。老了老了，你们年轻人定就行。",
+      "file": "audio3/laowang_B2_tech_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B2_tech",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "你们说的这些词，我一个都不明白。算了，听领导的。",
+      "spoken_text": "你们说的这些词，我一个都不明白。算了，听领导的。",
+      "file": "audio3/laowang_B2_tech_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B3_follow",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "那肯定记不全。机床这东西，得摸过才知道。",
+      "spoken_text": "那肯定记不全。机床这东西，得摸过才知道。",
+      "file": "audio3/laowang_B3_follow_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B3_follow",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "记不全，肯定记不全。我这些本事都在手上。",
+      "spoken_text": "记不全，肯定记不全。我这些本事都在手上。",
+      "file": "audio3/laowang_B3_follow_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B3_ignore_wang",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "行，你们聊，我先去车间看看。",
+      "spoken_text": "行，你们聊，我先去车间看看。",
+      "file": "audio3/laowang_B3_ignore_wang_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B3_ignore_wang",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "（起身）我那边还排着活呢，先走了。",
+      "spoken_text": "（起身）我那边还排着活呢，先走了。",
+      "file": "audio3/laowang_B3_ignore_wang_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B3_redirect",
+      "variant": 1,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "办法嘛……让系统排个初稿，我再校一遍，倒是可以。",
+      "spoken_text": "办法嘛……让系统排个初稿，我再校一遍，倒是可以。",
+      "file": "audio3/laowang_B3_redirect_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B3_redirect",
+      "variant": 2,
+      "role": "laowang",
+      "role_name": "王师傅",
+      "scenario": "three-party-second-visit",
+      "display_text": "要是让我最后把关，那还有点谱。",
+      "spoken_text": "要是让我最后把关，那还有点谱。",
+      "file": "audio3/laowang_B3_redirect_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunxiNeural",
+        "rate": "-15%"
+      }
+    },
+    {
+      "id": "B0_ask_laozhao",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "王总这个思路挺新，就是不知道落地靠不靠谱。",
+      "spoken_text": "王总这个思路挺新，就是不知道落地靠不靠谱。",
+      "file": "audio3/laozhao_B0_ask_laozhao_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_ask_laozhao",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "想法是好想法，不过嘛……车间的事，我还是有点发言权的。",
+      "spoken_text": "想法是好想法，不过嘛……车间的事，我还是有点发言权的。",
+      "file": "audio3/laozhao_B0_ask_laozhao_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_lecture",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "先等等——这个系统上线，要是排错了，耽误交期，算谁的？",
+      "spoken_text": "先等等——这个系统上线，要是排错了，耽误交期，算谁的？",
+      "file": "audio3/laozhao_B0_lecture_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_lecture",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "您先别急着讲，我问一句：出了问题谁负责？",
+      "spoken_text": "您先别急着讲，我问一句：出了问题谁负责？",
+      "file": "audio3/laozhao_B0_lecture_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_ask_back",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "最担心啥？说白了就是怕排期冲突、怕机床过载、怕老师傅撂挑子——这些系统管得了吗？",
+      "spoken_text": "最担心啥？说白了就是怕排期冲突、怕机床过载、怕老师傅撂挑子——这些系统管得了吗？",
+      "file": "audio3/laozhao_B1_ask_back_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_ask_back",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "您这么一问，我倒想说真话——我怕是'我排的'变成'电脑排的'，出了事全赖我。",
+      "spoken_text": "您这么一问，我倒想说真话——我怕是'我排的'变成'电脑排的'，出了事全赖我。",
+      "file": "audio3/laozhao_B1_ask_back_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_bragging",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "呵呵，哪套系统上线前都这么说。",
+      "spoken_text": "呵呵，哪套系统上线前都这么说。",
+      "file": "audio3/laozhao_B1_bragging_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_bragging",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "这话我听过太多次了，王总。",
+      "spoken_text": "这话我听过太多次了，王总。",
+      "file": "audio3/laozhao_B1_bragging_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_responsibility",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "说白了，我排了十几年没出大岔子，新系统一上来万一乱套，责任可在我这儿。",
+      "spoken_text": "说白了，我排了十几年没出大岔子，新系统一上来万一乱套，责任可在我这儿。",
+      "file": "audio3/laozhao_B1_responsibility_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_responsibility",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "我不是反对，就是担心——系统是死的，车间是活的，出个岔子我可担不起。",
+      "spoken_text": "我不是反对，就是担心——系统是死的，车间是活的，出个岔子我可担不起。",
+      "file": "audio3/laozhao_B1_responsibility_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_retort",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "行，那我就不多嘴了，你们定。",
+      "spoken_text": "行，那我就不多嘴了，你们定。",
+      "file": "audio3/laozhao_B1_retort_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_retort",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "得，我思想保守，耽误您了。",
+      "spoken_text": "得，我思想保守，耽误您了。",
+      "file": "audio3/laozhao_B1_retort_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_role",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "要是这么设计，排产员还是我、系统只做辅助……那倒是可以看看。",
+      "spoken_text": "要是这么设计，排产员还是我、系统只做辅助……那倒是可以看看。",
+      "file": "audio3/laozhao_B1_role_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B1_role",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "您要是真把我算进去，不当摆设，这我还能接受。",
+      "spoken_text": "您要是真把我算进去，不当摆设，这我还能接受。",
+      "file": "audio3/laozhao_B1_role_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B3_sow",
+      "variant": 1,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "老王你看，这电脑能替你记着机床的脾气吗？",
+      "spoken_text": "老王你看，这电脑能替你记着机床的脾气吗？",
+      "file": "audio3/laozhao_B3_sow_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B3_sow",
+      "variant": 2,
+      "role": "laozhao",
+      "role_name": "赵主任",
+      "scenario": "three-party-second-visit",
+      "display_text": "老王，你说说，你那二十年经验，电脑装得下不？",
+      "spoken_text": "老王，你说说，你那二十年经验，电脑装得下不？",
+      "file": "audio3/laozhao_B3_sow_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunjianNeural",
+        "rate": "-5%"
+      }
+    },
+    {
+      "id": "B0_open",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "王工，方案带来了？老赵、老王，都听听，把把关。",
+      "spoken_text": "王工，方案带来了？老赵、老王，都听听，把把关。",
+      "file": "audio3/zhang_B0_open_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B0_open",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "坐，坐。老赵、老王都在，你给他们讲讲你的想法。",
+      "spoken_text": "坐，坐。老赵、老王都在，你给他们讲讲你的想法。",
+      "file": "audio3/zhang_B0_open_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_zhang_middle",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "先试一条线，看看效果再说。你们别有压力。",
+      "spoken_text": "先试一条线，看看效果再说。你们别有压力。",
+      "file": "audio3/zhang_B4_zhang_middle_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_zhang_middle",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "那就先小范围试试，成了再推，不成就当没这回事。",
+      "spoken_text": "那就先小范围试试，成了再推，不成就当没这回事。",
+      "file": "audio3/zhang_B4_zhang_middle_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_zhang_pause",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "这事再缓缓。你们回去再商量商量，别急着上。",
+      "spoken_text": "这事再缓缓。你们回去再商量商量，别急着上。",
+      "file": "audio3/zhang_B4_zhang_pause_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_zhang_pause",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "今天先到这儿吧，我再想想，你们也别外传。",
+      "spoken_text": "今天先到这儿吧，我再想想，你们也别外传。",
+      "file": "audio3/zhang_B4_zhang_pause_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_zhang_push",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "那这样——先拿一条产线试一个月，老赵你把关，老王你带个头，试试看。",
+      "spoken_text": "那这样——先拿一条产线试一个月，老赵你把关，老王你带个头，试试看。",
+      "file": "audio3/zhang_B4_zhang_push_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "B4_zhang_push",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "行，老王都说行了，那就试！下周一上线，老赵、老王配合一下。",
+      "spoken_text": "行，老王都说行了，那就试！下周一上线，老赵、老王配合一下。",
+      "file": "audio3/zhang_B4_zhang_push_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_deal",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "就这么定！老王带个头，老赵把关，下周一试跑。成了我请你吃饭。",
+      "spoken_text": "就这么定！老王带个头，老赵把关，下周一试跑。成了我请你吃饭。",
+      "file": "audio3/zhang_END_deal_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_deal",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "全票通过，那就干吧。老赵你排个验收标准，老王你先上手熟悉。",
+      "spoken_text": "全票通过，那就干吧。老赵你排个验收标准，老王你先上手熟悉。",
+      "file": "audio3/zhang_END_deal_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_followup",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "那就先试一条线，你下周一带着具体排期表过来，我们定了就动。",
+      "spoken_text": "那就先试一条线，你下周一带着具体排期表过来，我们定了就动。",
+      "file": "audio3/zhang_END_followup_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_followup",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "行，先小范围试。你把方案细化一下，下次来我们直接定试点线。",
+      "spoken_text": "行，先小范围试。你把方案细化一下，下次来我们直接定试点线。",
+      "file": "audio3/zhang_END_followup_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_keep",
+      "variant": 1,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "今天先这样。你们先内部通个气，下个月再说。",
+      "spoken_text": "今天先这样。你们先内部通个气，下个月再说。",
+      "file": "audio3/zhang_END_keep_1.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    },
+    {
+      "id": "END_keep",
+      "variant": 2,
+      "role": "zhang",
+      "role_name": "张总",
+      "scenario": "three-party-second-visit",
+      "display_text": "这事不着急，你电话留一个，有需要我叫你。",
+      "spoken_text": "这事不着急，你电话留一个，有需要我叫你。",
+      "file": "audio3/zhang_END_keep_2.mp3",
+      "fixed": true,
+      "source": "v0.3-pre-generated",
+      "generation": {
+        "voice": "zh-CN-YunyangNeural",
+        "rate": "-8%"
+      }
+    }
+  ]
+}

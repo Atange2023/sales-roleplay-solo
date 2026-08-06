@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sales Roleplay Solo v0.4"
+  short_description: "Offline Chinese sales roleplay, scoring, and reports"
+  default_prompt: "Use $sales-roleplay-solo to start an offline Chinese consultative-sales practice session."

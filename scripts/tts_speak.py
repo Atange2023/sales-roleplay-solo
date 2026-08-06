@@ -1,150 +1,177 @@
 # -*- coding: utf-8 -*-
-"""数字人语音模块：edge-tts 合成 + ffplay 播放
+"""Offline-first fixed-line audio lookup with optional dynamic TTS fallback."""
 
-用法（在 Git Bash 或 PowerShell 中）：
-  py 03_tts_播放.py "文本内容"                      # 默认张总男声，合成并播放
-  py 03_tts_播放.py "文本" --voice zh-CN-XiaoxiaoNeural --rate -5%
-  py 03_tts_播放.py --batch                         # 从 02_台词数据库.json 批量合成到 audio/
-  py 03_tts_播放.py --play B3_loss                  # 播放台词库中某条（按 id）
+from __future__ import annotations
 
-依赖：pip install edge-tts；播放器 ffplay（FFmpeg 自带）。
-"""
-import sys, os, subprocess, json, asyncio, tempfile
+import argparse
+import asyncio
+import json
+import os
+import subprocess
+import sys
+import tempfile
+import time
+from pathlib import Path
 
-sys.stdout.reconfigure(encoding='utf-8')
-BASE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(BASE)                     # 仓库根目录
-AUDIO_DIR = os.path.join(ROOT, 'audio')
-AUDIO3_DIR = os.path.join(ROOT, 'audio3')
-AUDIO4_DIR = os.path.join(ROOT, 'audio4')
-SINGLE_DB = os.path.join(ROOT, 'scenarios', 'zhang_dialogue.json')
-THREE_DB = os.path.join(ROOT, 'scenarios', 'three_party_dialogue.json')
-BIZ_DB = os.path.join(ROOT, 'scenarios', 'business_school_dialogue.json')
-
-DEFAULT_VOICE = 'zh-CN-YunyangNeural'   # 沉稳男声（张总）
-DEFAULT_RATE = '-8%'                    # 语速稍慢，像 50+ 老板
+ROOT = Path(__file__).resolve().parents[1]
+MANIFEST = ROOT / "assets" / "audio-manifest.json"
+DATABASES = (
+    (ROOT / "scenarios" / "zhang_dialogue.json", ROOT / "audio", False),
+    (ROOT / "scenarios" / "three_party_dialogue.json", ROOT / "audio3", True),
+    (ROOT / "scenarios" / "business_school_dialogue.json", ROOT / "audio4", True),
+)
+DEFAULT_VOICE = "zh-CN-YunyangNeural"
+DEFAULT_RATE = "-8%"
 
 
-def speak(text, voice=DEFAULT_VOICE, rate=DEFAULT_RATE, play=True, out=None, quiet=False, retries=3):
-    """合成一段文本为 mp3（edge-tts Python API，规避命令行中文编码问题），可选播放（ffplay）。
-    内置重试：edge-tts 偶发 NoAudioReceived（网络限流），最多重试 retries 次。"""
-    import asyncio, edge_tts, time
-    out = out or os.path.join(tempfile.gettempdir(), 'tts_tmp.mp3')
+def _scenario_entries() -> list[dict]:
+    entries: list[dict] = []
+    for database, audio_dir, multi_role in DATABASES:
+        data = json.loads(database.read_text(encoding="utf-8"))
+        items = data["branches"] if multi_role else data["openings"] + data["branches"]
+        for item in items:
+            texts = item.get("replies") or [item["text"]]
+            if multi_role:
+                actor = data["characters"][item["char"]]
+                role_id = item["char"]
+                prefix = f"{role_id}_"
+            else:
+                actor = data["persona"]
+                role_id = "zhang"
+                prefix = ""
+            for variant, spoken in enumerate(texts, 1):
+                path = audio_dir / f"{prefix}{item['id']}_{variant}.mp3"
+                entries.append(
+                    {
+                        "id": item["id"],
+                        "variant": variant,
+                        "role": role_id,
+                        "role_name": actor.get("name", role_id),
+                        "scenario": data.get("scene", "manufacturing-single"),
+                        "display_text": spoken,
+                        "spoken_text": spoken,
+                        "file": path.relative_to(ROOT).as_posix(),
+                        "fixed": True,
+                        "source": "v0.3-pre-generated",
+                        "generation": {
+                            "voice": actor.get("voice", DEFAULT_VOICE),
+                            "rate": actor.get("rate", DEFAULT_RATE),
+                        },
+                    }
+                )
+    return entries
 
-    async def _gen():
-        comm = edge_tts.Communicate(text, voice, rate=rate)
-        await comm.save(out)
+
+def load_catalog() -> list[dict]:
+    if MANIFEST.exists():
+        data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        return data["entries"]
+    return _scenario_entries()
+
+
+def resolve_line(line_id: str, variant: int = 1) -> dict | None:
+    for item in load_catalog():
+        if item["id"] == line_id and int(item.get("variant", 1)) == variant:
+            return item
+    return None
+
+
+def _launch(path: Path) -> None:
+    subprocess.run(
+        ["ffplay", "-nodisp", "-autoexit", "-loglevel", "quiet", str(path)],
+        check=False,
+    )
+
+
+def speak_dynamic(
+    text: str,
+    voice: str = DEFAULT_VOICE,
+    rate: str = DEFAULT_RATE,
+    *,
+    launch: bool = True,
+    output: Path | None = None,
+    retries: int = 3,
+) -> Path:
+    """Generate online fallback audio. Never used in offline mode."""
+    import edge_tts
+
+    destination = output or Path(tempfile.gettempdir()) / f"sales-roleplay-{os.getpid()}.mp3"
+
+    async def generate() -> None:
+        await edge_tts.Communicate(text, voice, rate=rate).save(str(destination))
 
     for attempt in range(1, retries + 1):
         try:
-            asyncio.run(_gen())
+            asyncio.run(generate())
             break
         except Exception:
-            if attempt >= retries:
+            if attempt == retries:
                 raise
-            time.sleep(2 * attempt)
-
-    if play:
-        subprocess.run(['ffplay', '-nodisp', '-autoexit', '-loglevel', 'quiet', out])
-    if not quiet:
-        print('OK ->', out)
-    return out
+            time.sleep(attempt)
+    if launch:
+        _launch(destination)
+    return destination
 
 
-def batch_synth():
-    """从单人台词库 JSON 批量合成全部台词到 audio/（不播放）。"""
-    os.makedirs(AUDIO_DIR, exist_ok=True)
-    with open(SINGLE_DB, encoding='utf-8') as f:
-        db = json.load(f)
-    voice = db['persona']['voice']
-    rate = db['persona']['rate']
-    items = [(o['id'], [o['text']]) for o in db['openings']]
-    items += [(b['id'], b['replies']) for b in db['branches']]
-    n = 0
-    for key, texts in items:
-        for i, text in enumerate(texts):
-            name = f"{key}_{i+1}.mp3"
-            speak(text, voice=voice, rate=rate, play=False,
-                  out=os.path.join(AUDIO_DIR, name), quiet=True)
-            n += 1
-    print(f'批量合成完成：{n} 条 -> {AUDIO_DIR}')
+def play_by_id(
+    line_id: str,
+    *,
+    variant: int = 1,
+    launch: bool = True,
+    offline: bool = False,
+) -> tuple[str, str] | None:
+    entry = resolve_line(line_id, variant)
+    if entry is None:
+        return None
+    local = ROOT / entry["file"]
+    if local.is_file() and local.stat().st_size > 0:
+        if launch:
+            _launch(local)
+        return ("local", entry["file"])
+    if offline:
+        return ("text", entry["display_text"])
+    generation = entry.get("generation", {})
+    path = speak_dynamic(
+        entry["spoken_text"],
+        generation.get("voice", DEFAULT_VOICE),
+        generation.get("rate", DEFAULT_RATE),
+        launch=launch,
+    )
+    return ("dynamic", str(path))
 
 
-def batch_synth4():
-    """商学院台词库批量合成（三类学员按角色 voice）到 audio4/。"""
-    os.makedirs(AUDIO4_DIR, exist_ok=True)
-    with open(BIZ_DB, encoding='utf-8') as f:
-        db = json.load(f)
-    chars = db['characters']
-    n = 0
-    for b in db['branches']:
-        ch = chars[b['char']]
-        for i, text in enumerate(b['replies']):
-            speak(text, voice=ch['voice'], rate=ch['rate'], play=False,
-                  out=os.path.join(AUDIO4_DIR, f"{b['char']}_{b['id']}_{i+1}.mp3"), quiet=True)
-            n += 1
-    print(f'商学院台词合成完成：{n} 条 -> {AUDIO4_DIR}')
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--play", metavar="ID")
+    parser.add_argument("--variant", type=int, default=1)
+    parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--no-launch", action="store_true")
+    parser.add_argument("text", nargs="?")
+    args = parser.parse_args(argv)
+
+    if args.play:
+        result = play_by_id(
+            args.play,
+            variant=args.variant,
+            launch=not args.no_launch,
+            offline=args.offline,
+        )
+        if result is None:
+            print(f"ERROR unknown line id: {args.play}", file=sys.stderr)
+            return 2
+        mode, value = result
+        print(f"{mode.upper()} -> {value}")
+        return 0
+    if args.text:
+        if args.offline:
+            print(f"TEXT -> {args.text}")
+            return 0
+        path = speak_dynamic(args.text, launch=not args.no_launch)
+        print(f"DYNAMIC -> {path}")
+        return 0
+    parser.print_help()
+    return 0
 
 
-def batch_synth3():
-    """从三人台词库批量合成（按角色 voice/rate）到 audio3/（不播放）。"""
-    os.makedirs(AUDIO3_DIR, exist_ok=True)
-    with open(THREE_DB, encoding='utf-8') as f:
-        db = json.load(f)
-    chars = db['characters']
-    n = 0
-    for b in db['branches']:
-        ch = chars[b['char']]
-        for i, text in enumerate(b['replies']):
-            name = f"{b['char']}_{b['id']}_{i+1}.mp3"
-            speak(text, voice=ch['voice'], rate=ch['rate'], play=False,
-                  out=os.path.join(AUDIO3_DIR, name), quiet=True)
-            n += 1
-    print(f'三人台词合成完成：{n} 条 -> {AUDIO3_DIR}')
-
-
-def play_by_id(key):
-    """播放台词库中指定 id 的第一条（--play <id>），单人/三人库都支持。"""
-    for path, is_three in ((SINGLE_DB, False), (THREE_DB, True)):
-        with open(path, encoding='utf-8') as f:
-            db = json.load(f)
-        if not is_three:
-            for it in db['openings'] + db['branches']:
-                if it['id'] == key:
-                    speak(it['replies'][0] if 'replies' in it else it['text'],
-                          voice=db['persona']['voice'], rate=db['persona']['rate'])
-                    return
-        else:
-            for it in db['branches']:
-                if it['id'] == key:
-                    ch = db['characters'][it['char']]
-                    speak(it['replies'][0], voice=ch['voice'], rate=ch['rate'])
-                    return
-    print('未找到 id:', key)
-
-
-if __name__ == '__main__':
-    args = sys.argv[1:]
-    if not args:
-        print(__doc__)
-    elif args[0] == '--batch':
-        batch_synth()
-    elif args[0] == '--batch3':
-        batch_synth3()
-    elif args[0] == '--batch4':
-        batch_synth4()
-    elif args[0] == '--play' and len(args) > 1:
-        play_by_id(args[1])
-    else:
-        text = args[0]
-        voice = DEFAULT_VOICE
-        rate = DEFAULT_RATE
-        i = 1
-        while i < len(args):
-            if args[i] == '--voice' and i + 1 < len(args):
-                voice = args[i + 1]; i += 2
-            elif args[i] == '--rate' and i + 1 < len(args):
-                rate = args[i + 1]; i += 2
-            else:
-                i += 1
-        speak(text, voice=voice, rate=rate)
+if __name__ == "__main__":
+    raise SystemExit(main())
