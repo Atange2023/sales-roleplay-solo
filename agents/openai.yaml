@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sales Roleplay Solo v0.4.2"
+  short_description: "Agent-native voice sales game with coaching and progression"
+  default_prompt: "Use $sales-roleplay-solo to start in this chat: audibly play boot music, explain the game, select DLC before stage, enforce unlocks, act the customer dynamically, and give parenthetical coaching after every teaching-mode turn."
