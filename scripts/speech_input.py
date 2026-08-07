@@ -29,10 +29,10 @@ if($null -ne $result){{[Console]::OutputEncoding=[Text.Encoding]::UTF8; $result.
 
 def read_turn(mode: str) -> str:
     if mode == "voice":
-        print("[VOICE] 请开始说话……")
+        print("【语音】请开始说话……")
         spoken = capture_windows_speech()
         if spoken:
-            print(f"[TRANSCRIPT] {spoken}")
+            print(f"【识别结果】{spoken}")
             return spoken
-        print("[VOICE] 未识别到语音，已回退文字输入。")
-    return input("[TEXT] > ").strip()
+        print("【提示】本轮语音暂不可用，已自动切换为文字，不影响关卡进度。")
+    return input("【文字输入】> ").strip()

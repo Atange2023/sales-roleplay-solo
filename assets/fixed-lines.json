@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "entries": [
     {
       "id": "SYS_BOOT",
@@ -403,6 +403,210 @@
       "file": "assets/audio/fixed/coach_role_professional_exit_1.mp3",
       "fixed": true,
       "source": "v0.4-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_BOSS_OPEN",
+      "variant": 1,
+      "role": "boss",
+      "role_name": "企业老板",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "价格我可以谈，但你得保证我以后任何时候不满意都能退。",
+      "spoken_text": "价格我可以谈，但你得保证我以后任何时候不满意都能退。",
+      "file": "assets/audio/fixed/l02_boss_open_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_SCHOLAR_OPEN",
+      "variant": 1,
+      "role": "scholar",
+      "role_name": "高分学员",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "以我的背景，先确认奖学金比例，我才交材料。",
+      "spoken_text": "以我的背景，先确认奖学金比例，我才交材料。",
+      "file": "assets/audio/fixed/l02_scholar_open_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_EMPLOYEE_OPEN",
+      "variant": 1,
+      "role": "employee",
+      "role_name": "职场学员",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "硕博连读能不能先按优惠价交，然后我再退掉博士阶段？",
+      "spoken_text": "硕博连读能不能先按优惠价交，然后我再退掉博士阶段？",
+      "file": "assets/audio/fixed/l02_employee_open_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_CORPORATE_OPEN",
+      "variant": 1,
+      "role": "corporate",
+      "role_name": "企业付费学员",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "公司愿意出钱，但付款节点和发票内容要符合我们的审批。",
+      "spoken_text": "公司愿意出钱，但付款节点和发票内容要符合我们的审批。",
+      "file": "assets/audio/fixed/l02_corporate_open_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_RESOURCE_OPEN",
+      "variant": 1,
+      "role": "resource",
+      "role_name": "合作型企业家",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "如果学校愿意组织学员参观我的公司并设一个校友活动点，我就报名缴费。",
+      "spoken_text": "如果学校愿意组织学员参观我的公司并设一个校友活动点，我就报名缴费。",
+      "file": "assets/audio/fixed/l02_resource_open_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_NORMAL_PASS",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "客户已确认按规定完成报名缴费流程，本关通过。",
+      "spoken_text": "客户已确认按规定完成报名缴费流程，本关通过。",
+      "file": "assets/audio/fixed/l02_normal_pass_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_SCHOLARSHIP_PASS",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "奖学金正式申请已按规定提交，本关通过。",
+      "spoken_text": "奖学金正式申请已按规定提交，本关通过。",
+      "file": "assets/audio/fixed/l02_scholarship_pass_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_AID_PASS",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "助学金材料已提交正确权限人审核，本关通过。",
+      "spoken_text": "助学金材料已提交正确权限人审核，本关通过。",
+      "file": "assets/audio/fixed/l02_aid_pass_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_SPECIAL_PASS",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "特殊条件与客户承诺已经闭环，并提交校领导审批，本关通过。",
+      "spoken_text": "特殊条件与客户承诺已经闭环，并提交校领导审批，本关通过。",
+      "file": "assets/audio/fixed/l02_special_pass_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_NONPASS",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "客户尚未形成明确报名行动，本关未通关。",
+      "spoken_text": "客户尚未形成明确报名行动，本关未通关。",
+      "file": "assets/audio/fixed/l02_nonpass_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_TIMEOUT",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "有效回合已经用完，客户态度仍未明确，本局结束。",
+      "spoken_text": "有效回合已经用完，客户态度仍未明确，本局结束。",
+      "file": "assets/audio/fixed/l02_timeout_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
+      "generation": {
+        "engine": "Windows SAPI",
+        "voice": "Microsoft Huihui Desktop",
+        "rate": 0
+      }
+    },
+    {
+      "id": "L02_POLICY_FAILURE",
+      "variant": 1,
+      "role": "coach",
+      "role_name": "系统教练",
+      "scenario": "dlc02-enrollment-negotiation",
+      "display_text": "本轮出现越权承诺或政策违规，本局失败。",
+      "spoken_text": "本轮出现越权承诺或政策违规，本局失败。",
+      "file": "assets/audio/fixed/l02_policy_failure_1.mp3",
+      "fixed": true,
+      "source": "v0.4.3-windows-sapi-pre-generated",
       "generation": {
         "engine": "Windows SAPI",
         "voice": "Microsoft Huihui Desktop",

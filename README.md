@@ -1,46 +1,51 @@
-# sales-roleplay-solo — 数字人语音销售陪练系统（v0.3 完整包）
+# sales-roleplay-solo v0.4.3
 
-沉浸式"提问销售法"训练系统：像打游戏一样——**选行业 DLC → 选关卡 → 数字人客户（带语音）陪练 → 通关/失败 → 六维复盘**。
+面向主流 Agent 的中文智能销售陪练 Skill。加载后由宿主大模型扮演客户与教练；本地 Python 只负责菜单、语音播放、规则、进度、日志、周报和离线验证，不是独立聊天软件。
 
-> 主平台：**Reasonix + DeepSeek V4**；兼容 Codex / 豆包（Agent Skill 格式 + 本地脚本，不依赖特定模型）。
+## 主要能力
 
-## 🚀 快速安装（Reasonix，约 5 分钟）
+- 复古 DOS/MUD 字符启动界面，先选 DLC、再选关卡，选关后直接开始。
+- 文字与麦克风输入随时切换，保持同一客户和证据状态。
+- 每轮客户回应后提供教练分析、改良建议、参考表达和进度。
+- 简单、正常、困难三档难度；最多 20 个有效回合。
+- 双轴评分：八维销售能力 0–24 与客户结果独立记录。
+- 本地日志与领导可读 HTML/CSV 周报。
+- 145 条 v0.3 客户语音、固定系统语音、5 个 MIDI/WAV 提示音离线可用。
 
-```bash
-# 1. 安装语音依赖（可选：不装可纯文字练习，audio/ 已预合成 145 条语音）
-py -m pip install edge-tts
+## 关卡
 
-# 2. 把本文件夹整体复制到你的 skills 目录
-#    <你的工作区>\.reasonix\skills\sales-roleplay-solo\
+- DLC01 制造业
+  - L01 第一次正式面谈
+  - L02 三人方案会
+- DLC02 商学院
+  - L01 潜在学员需求诊断：15 项证据、八维客户画像还原、多种通关与未通关结局。
+  - L02 报名政策与价格谈判：价格、退款、奖学金、助学金、特殊条件与权限边界。
 
-# 3. 重启 Reasonix，然后说：
-#    "我要练销售开场" 或 "/sales-roleplay-solo"
+## 安装
+
+将完整 `sales-roleplay-solo/` 文件夹复制到 Agent 的 Skill 目录，然后重启或重新索引 Agent：
+
+- Codex：`%USERPROFILE%\.codex\skills\sales-roleplay-solo`
+- Reasonix：`.reasonix\skills\sales-roleplay-solo`
+- OpenClaw/ArkClaw：`~/.openclaw/workspace/skills/sales-roleplay-solo`
+
+通过 Git 安装当前 GitHub 主分支：
+
+```powershell
+git clone https://github.com/Atange2023/sales-roleplay-solo.git "$env:USERPROFILE\.codex\skills\sales-roleplay-solo"
 ```
 
-详细安装/平台/FAQ/演练流程 → 打开 `docs/usage_manual.md`（用户指导手册）。
+安装后直接在 Agent 对话中说“启动销售陪练”。不要用 `py scripts/roleplay.py --offline` 开始练习；该脚本只做离线自检。
 
-## 📦 包含什么
+## 更新与自检
 
-| 模块 | 路径 | 说明 |
-| --- | --- | --- |
-| Skill 主入口 | `SKILL.md` | 教练运行规范（选关/打关/复盘/失败判定） |
-| 方法层 | `methods/` | 提问销售法核心：5 场景方法 + 术语表 + 话术模式 + 随身卡 |
-| 关卡剧本 | `scenarios/` | 制造业单人/三人、商学院招生 3 个关卡剧本 + 台词库 |
-| 语音模块 | `scripts/tts_speak.py` | edge-tts 合成 + ffplay 播放 + 批量合成 |
-| 关卡文档 | `docs/` | 关卡系统设计、复盘模板×2 示例、调研笔记、使用手册 |
-| 预合成语音 | `audio/ audio3/ audio4/` | 145 条（三场景/三角色），开箱即用 |
+在 Agent 中说 `sales-roleplay update`，Agent 会调用随包更新器并保留 `data/`、`reports/` 和进度。详情见 `references/updating.md`。
 
-## 🎮 三个关卡（v0.3）
+```powershell
+py scripts/roleplay.py --smoke --offline --no-audio
+py -m unittest discover -s tests -p "test_*.py"
+```
 
-- **DLC-01 制造业 · L01 单人拜访**：张总（15–20 回合，3 开局 × 5 分支 × 3 结局）
-- **DLC-01 制造业 · L02 三人方案会**：张总+老赵+老王，群体支持度机制
-- **DLC-02 商学院 · L01 招生面谈**：周总/林女士/小陈三类学员随机出现
+## 版权
 
-## 📈 路线图
-
-- v0.1 单人拜访 → v0.2 三人 + 关卡系统 + 复盘 → **v0.3 双行业完整包（当前）**
-- v0.4 规划：家族企业双人会谈 / Whisper 语音输入 / 自动评分
-
-## © 版权
-
-方法框架源自《销售就是会提问》（青木毅，天津人民出版社 2021，理论出处标注原书页码）；剧本/台词/脚本为本仓库原创（MIT），不包含原书正文。
+方法框架参考《销售就是会提问》（青木毅，天津人民出版社 2021）；剧本、规则、脚本与资产为本仓库内容，代码采用 MIT License。

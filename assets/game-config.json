@@ -1,20 +1,14 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "session_rules": {"maximum_effective_turns": 20, "warning_turns": [15, 18], "difficulties": ["简单", "正常", "困难"], "default_difficulty": "正常"},
   "dlcs": [
-    {
-      "id": "DLC01",
-      "name": "制造业",
-      "stages": [
-        {"id": "L01", "name": "第一次正式面谈", "scenario": "scenarios/zhang_dialogue.json"},
-        {"id": "L02", "name": "三人方案会", "scenario": "scenarios/three_party_dialogue.json"}
-      ]
-    },
-    {
-      "id": "DLC02",
-      "name": "商学院",
-      "stages": [
-        {"id": "L01", "name": "公开课后招生咨询", "scenario": "scenarios/business_school_dialogue.json"}
-      ]
-    }
+    {"id": "DLC01", "name": "制造业", "stages": [
+      {"id": "L01", "name": "第一次正式面谈", "scenario": "scenarios/zhang_dialogue.json", "unlock_outcomes": ["stage_clear", "professional_exit"]},
+      {"id": "L02", "name": "三人方案会", "scenario": "scenarios/three_party_dialogue.json", "unlock_outcomes": ["stage_clear", "professional_exit"]}
+    ]},
+    {"id": "DLC02", "name": "商学院", "stages": [
+      {"id": "L01", "name": "潜在学员需求诊断", "scenario": "scenarios/business_school_dialogue.json", "rules": "references/dlc02-stage1.md", "unlock_outcomes": ["stage_clear"]},
+      {"id": "L02", "name": "报名政策与价格谈判", "scenario": "assets/dlc02-personas.json", "rules": "references/dlc02-stage2.md", "unlock_outcomes": ["stage_clear"]}
+    ]}
   ]
 }

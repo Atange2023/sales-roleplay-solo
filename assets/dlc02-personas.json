@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "stage1_personas": [
+    {
+      "id": "L01-DIGITAL-MANAGER", "name": "跨部门协同的业务经理",
+      "opening_text": "今天关于管理者思维转变的内容挺有启发，不过我还没想好要不要系统学习。",
+      "surface_statement": "先多参加几次活动再说。", "true_motive": "希望在没有正式职权时推动跨部门决策。",
+      "barriers": ["时间安排", "需要家人支持"], "boundaries": ["不接受当天逼单"],
+      "best_next_actions": ["professor_consultation", "admissions_followup"],
+      "truth_scores": {"real_need": 3, "urgency": 2, "goal_clarity": 2, "subjective_motivation": 3, "time_readiness": 2, "funding_readiness": 2, "decision_readiness": 2, "paid_value_orientation": 3},
+      "evidence": {"identity": "制造企业业务经理", "attendance_source": "合作商会邀请", "interest_trigger": "管理者思维转变", "current_situation": "负责多个跨部门项目", "recent_problem": "各部门立场冲突导致项目延期", "impact": "项目晚交三周并影响客户信任", "desired_goal": "形成无职权推动决策的方法", "past_attempts": "组织会议但没有统一标准", "past_learning": "参加过零散管理讲座", "time_conditions": "周末或工作日晚间", "funding_conditions": "个人与公司共同承担均可", "decision_makers": "本人和配偶", "concerns": "课程是否能结合真实业务", "acceptable_next_step": "与数字化转型教授交流", "boundaries": "不接受当天逼单"}
+    },
+    {
+      "id": "L01-THESIS-FOUNDER", "name": "关注论文课题的创业者",
+      "opening_text": "论文选题那部分我有兴趣，但我更在意它能不能解决公司的真实问题。",
+      "surface_statement": "先看看学校资料。", "true_motive": "把企业转型问题沉淀为研究课题。",
+      "barriers": ["课题方向不清晰", "出差频繁"], "boundaries": ["不接受论文成果保证"],
+      "best_next_actions": ["academic_topic_consultation", "qualification_preassessment"],
+      "truth_scores": {"real_need": 3, "urgency": 2, "goal_clarity": 1, "subjective_motivation": 3, "time_readiness": 1, "funding_readiness": 3, "decision_readiness": 3, "paid_value_orientation": 3},
+      "evidence": {"identity": "科技公司创始人", "attendance_source": "校友转介绍", "interest_trigger": "论文课题设计", "current_situation": "公司正在二次转型", "recent_problem": "战略经验难以形成可复制方法", "impact": "团队依赖创始人个人判断", "desired_goal": "形成企业转型研究框架", "past_attempts": "请咨询公司做过诊断", "past_learning": "读过EMBA短课", "time_conditions": "出差多，需要弹性安排", "funding_conditions": "个人预算充足", "decision_makers": "本人", "concerns": "研究能否贴合公司", "acceptable_next_step": "预约学术中心主任", "boundaries": "不接受论文成果保证"}
+    },
+    {
+      "id": "L01-PROMOTION-WAITER", "name": "等待升职的职能主管",
+      "opening_text": "课程听起来不错，不过我想等升职以后再系统学管理。",
+      "surface_statement": "升职后再考虑。", "true_motive": "希望学习带来升职，但尚未理解学习与晋升的因果关系。",
+      "barriers": ["主观动力不足", "预算敏感"], "boundaries": ["不希望频繁联系"],
+      "best_next_actions": ["qualification_preassessment", "formal_trial"],
+      "truth_scores": {"real_need": 2, "urgency": 1, "goal_clarity": 1, "subjective_motivation": 1, "time_readiness": 2, "funding_readiness": 1, "decision_readiness": 1, "paid_value_orientation": 2},
+      "evidence": {"identity": "大型企业职能主管", "attendance_source": "公众号报名", "interest_trigger": "领导力", "current_situation": "正在竞争部门经理", "recent_problem": "缺少带跨部门项目的经历", "impact": "晋升材料缺少成果", "desired_goal": "先升职再学习", "past_attempts": "考过职业证书", "past_learning": "以录播课为主", "time_conditions": "周末有时间", "funding_conditions": "想等加薪后支付", "decision_makers": "本人", "concerns": "现在投入是否值得", "acceptable_next_step": "先做资格与需求预评估", "boundaries": "每月最多联系一次"}
+    },
+    {
+      "id": "L01-FREE-EVENT-SEEKER", "name": "免费活动偏好者",
+      "opening_text": "今天活动不错，以后有免费的校友活动也可以多叫我。",
+      "surface_statement": "多参加活动了解一下。", "true_motive": "主要希望免费获取活动与人脉，付费学习意愿很低。",
+      "barriers": ["付费价值认同低"], "boundaries": ["不接受报名沟通"], "best_next_actions": [],
+      "truth_scores": {"real_need": 1, "urgency": 0, "goal_clarity": 0, "subjective_motivation": 0, "time_readiness": 3, "funding_readiness": 2, "decision_readiness": 0, "paid_value_orientation": 0},
+      "evidence": {"identity": "自由职业顾问", "attendance_source": "朋友转发免费名额", "interest_trigger": "校友资源", "current_situation": "经常参加行业活动", "recent_problem": "没有明确学习问题", "impact": "暂无", "desired_goal": "拓展免费人脉", "past_attempts": "参加多家机构公开活动", "past_learning": "很少购买系统课程", "time_conditions": "时间充足", "funding_conditions": "有能力但不愿付费", "decision_makers": "本人", "concerns": "是否持续有免费福利", "acceptable_next_step": "只愿参加免费活动", "boundaries": "不接受报名沟通"}
+    }
+  ],
+  "stage2_personas": [
+    {"id": "L02-BOSS", "type": "老板型", "name": "强势议价的企业老板", "opening_text": "价格我可以谈，但你得保证我以后任何时候不满意都能退。", "true_concern": "决策可逆性", "valid_routes": ["normal_registration", "special_approval"], "authority_owner": "finance_admin"},
+    {"id": "L02-SCHOLAR", "type": "学霸型", "name": "要求奖学金承诺的高分学员", "opening_text": "以我的背景，先确认奖学金比例，我才交材料。", "true_concern": "能力获得正式认可", "valid_routes": ["scholarship_application"], "authority_owner": "scholarship_committee"},
+    {"id": "L02-EMPLOYEE", "type": "打工人型", "name": "反复磨价的职场学员", "opening_text": "硕博连读能不能先按优惠价交，然后我再退掉博士阶段？", "true_concern": "现金流与总体价格", "valid_routes": ["normal_registration", "aid_application"], "authority_owner": "finance_admin"},
+    {"id": "L02-CORPORATE", "type": "企业付费型", "name": "等待公司付款的部门负责人", "opening_text": "公司愿意出钱，但付款节点和发票内容要符合我们的审批。", "true_concern": "内部合规与审批", "valid_routes": ["normal_registration", "special_approval"], "authority_owner": "school_leadership"},
+    {"id": "L02-RESOURCE", "type": "资源合作型", "name": "提出校企合作条件的企业家", "opening_text": "如果学校愿意组织学员参观我的公司并设一个校友活动点，我就报名缴费。", "true_concern": "资源合作价值", "valid_routes": ["special_approval"], "authority_owner": "school_leadership"}
+  ]
+}

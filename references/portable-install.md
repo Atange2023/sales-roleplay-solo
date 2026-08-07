@@ -8,16 +8,16 @@ Typical locations:
 - Reasonix: `.reasonix\skills\sales-roleplay-solo`
 - OpenClaw/ArkClaw: `~/.openclaw/workspace/skills/sales-roleplay-solo`
 
-Git install after a v0.4.2 tag exists:
+Git installation follows the repository's currently published main branch:
 
 ```powershell
-git clone --branch v0.4.2 --depth 1 https://github.com/Atange2023/sales-roleplay-solo.git "$env:USERPROFILE\.codex\skills\sales-roleplay-solo"
+git clone https://github.com/Atange2023/sales-roleplay-solo.git "$env:USERPROFILE\.codex\skills\sales-roleplay-solo"
 ```
 
-Offline self-check from the installed Skill folder:
+After installation, start from the Agent chat by saying “启动销售陪练”. The support-only offline self-check is:
 
 ```powershell
 py scripts/roleplay.py --smoke --offline --no-audio
 ```
 
-Text practice, fixed MP3, cues, progress, logs, CSV, and HTML require no network. Speech transcription and dynamic TTS depend on host capability.
+Text practice, packaged MP3, cues, progress, logs, CSV, and HTML require no network. Microphone transcription and non-fixed generated voice depend on host capability.

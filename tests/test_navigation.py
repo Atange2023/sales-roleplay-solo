@@ -28,28 +28,28 @@ class NavigationTests(unittest.TestCase):
     def test_first_menu_contains_dlcs_but_not_flat_stage_list(self) -> None:
         completed = run_menu("dlcs")
         self.assertEqual(completed.returncode, 0, completed.stderr)
-        self.assertIn("DLC01", completed.stdout)
-        self.assertIn("DLC02", completed.stdout)
-        self.assertNotIn("L01", completed.stdout)
+        self.assertIn("【1】制造业", completed.stdout)
+        self.assertIn("【2】商学院", completed.stdout)
+        self.assertNotIn("第一次正式面谈", completed.stdout)
 
     def test_manufacturing_stage_menu_shows_sequential_lock(self) -> None:
         with tempfile.TemporaryDirectory(dir=TMP_ROOT) as tmp:
             completed = run_menu("stages", "DLC01", "--progress", str(Path(tmp) / "progress.json"))
         self.assertEqual(completed.returncode, 0, completed.stderr)
-        self.assertIn("L01 [UNLOCKED]", completed.stdout)
-        self.assertIn("L02 [LOCKED]", completed.stdout)
+        self.assertIn("【1】第一次正式面谈　【已解锁】", completed.stdout)
+        self.assertIn("【2】三人方案会　【未解锁】", completed.stdout)
 
     def test_business_school_first_stage_is_available_without_manufacturing_pass(self) -> None:
         with tempfile.TemporaryDirectory(dir=TMP_ROOT) as tmp:
             completed = run_menu("stages", "DLC02", "--progress", str(Path(tmp) / "progress.json"))
         self.assertEqual(completed.returncode, 0, completed.stderr)
-        self.assertIn("L01 [UNLOCKED]", completed.stdout)
+        self.assertIn("【1】潜在学员需求诊断　【已解锁】", completed.stdout)
 
     def test_locked_stage_selection_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory(dir=TMP_ROOT) as tmp:
             completed = run_menu("select", "DLC01", "L02", "--progress", str(Path(tmp) / "progress.json"))
         self.assertEqual(completed.returncode, 2)
-        self.assertIn("LOCKED", completed.stdout)
+        self.assertIn("【未解锁】", completed.stdout)
 
 
 if __name__ == "__main__":

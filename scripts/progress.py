@@ -44,6 +44,13 @@ def _dlc(config: dict, dlc_id: str) -> dict:
     raise ValueError(f"unknown DLC: {dlc_id}")
 
 
+def _stage(config: dict, dlc_id: str, stage_id: str) -> dict:
+    for stage in _dlc(config, dlc_id)["stages"]:
+        if stage["id"] == stage_id:
+            return stage
+    raise ValueError(f"unknown stage: {dlc_id}-{stage_id}")
+
+
 def stage_status(config: dict, progress: dict, dlc_id: str, stage_id: str) -> str:
     stages = _dlc(config, dlc_id)["stages"]
     ids = [stage["id"] for stage in stages]
@@ -74,7 +81,9 @@ def record_outcome(path: Path | str, dlc_id: str, stage_id: str, learner_outcome
     progress = load_progress(path)
     stage_status(config, progress, dlc_id, stage_id)
     completed = progress["dlcs"].setdefault(dlc_id, {}).setdefault("completed", [])
-    if learner_outcome in PASSING_OUTCOMES and stage_id not in completed:
+    stage_config = _stage(config, dlc_id, stage_id)
+    unlock_outcomes = set(stage_config.get("unlock_outcomes", PASSING_OUTCOMES))
+    if learner_outcome in unlock_outcomes and stage_id not in completed:
         completed.append(stage_id)
     progress["last_outcomes"][f"{dlc_id}-{stage_id}"] = learner_outcome
     save_progress(path, progress)

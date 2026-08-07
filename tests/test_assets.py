@@ -19,9 +19,9 @@ class AssetManifestTests(unittest.TestCase):
         self.assertEqual(len(legacy), 145)
         self.assertEqual({item["file"] for item in legacy}, {path.relative_to(ROOT).as_posix() for path in packaged})
 
-    def test_manifest_has_exactly_169_complete_nonempty_entries(self) -> None:
+    def test_manifest_has_exactly_181_complete_nonempty_entries(self) -> None:
         entries = json.loads(MANIFEST.read_text(encoding="utf-8"))["entries"]
-        self.assertEqual(len(entries), 169)
+        self.assertEqual(len(entries), 181)
         for item in entries:
             self.assertTrue(REQUIRED_FIELDS.issubset(item), item)
             self.assertTrue(item["display_text"])

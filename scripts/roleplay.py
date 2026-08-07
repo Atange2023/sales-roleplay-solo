@@ -25,7 +25,7 @@ from session_engine import append_session, build_session
 
 BANNER = r"""
 +=====================================================+
-|        SALES ROLEPLAY SOLO v0.4.2 // OFFLINE       |
+|        SALES ROLEPLAY SOLO v0.4.3 // OFFLINE       |
 |        AGENT-NATIVE SUPPORT VALIDATION TERMINAL     |
 +=====================================================+
 """

@@ -1,8 +1,8 @@
 # Sales Roleplay Solo v0.4.3 DLC02 Upgrade Design
 
-**Status:** Approved for implementation  
-**Date:** 2026-08-07  
-**Version:** v0.4.3  
+**Status:** Approved for implementation
+**Date:** 2026-08-07
+**Version:** v0.4.3
 **Scope:** Chinese DOS/MUD presentation shell, DLC02-L01 upgrade, and new DLC02-L02. All accepted v0.3/v0.4.2 behavior remains a regression requirement.
 
 ## 1. Product contract
